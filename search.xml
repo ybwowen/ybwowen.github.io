@@ -24,7 +24,7 @@
       <link href="/manifest.json"/>
       <url>/manifest.json</url>
       
-        <content type="html"><![CDATA[{"lang":"zh-CN","dir":"ltr","name":"ybwowen's blog","discription":"ybwowen的个人博客","start_url":"/","short_name":"ybwowen","scope":"/","icons":[{"src":"/img/siteicon/android-chrome-36x36.png","sizes":"36x36","type":"image/png"},{"src":"/img/siteicon/android-chrome-48x48.png","sizes":"48x48","type":"image/png"},{"src":"/img/siteicon/android-chrome-72x72.png","sizes":"72x72","type":"image/png"},{"src":"/img/siteicon/android-chrome-96x96.png","sizes":"96x96","type":"image/png"},{"src":"/img/siteicon/android-chrome-144x144.png","sizes":"144x144","type":"image/png"},{"src":"/img/siteicon/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/img/siteicon/android-chrome-256x256.png","sizes":"256x256","type":"image/png"},{"src":"/img/siteicon/android-chrome-384x384.png","sizes":"384x384","type":"image/png"},{"src":"/img/siteicon/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}],"theme_color":"#000000","background_color":"#000000","display":"standalone"}]]></content>
+        <content type="html"><![CDATA[{"lang":"zh-CN","name":"ybwowen's blog","discription":"ybwowen的个人博客","start_url":"/","short_name":"ybwowen","scope":"/","icons":[{"src":"/img/siteicon/android-chrome-36x36.png","sizes":"36x36","type":"image/png"},{"src":"/img/siteicon/android-chrome-48x48.png","sizes":"48x48","type":"image/png"},{"src":"/img/siteicon/android-chrome-72x72.png","sizes":"72x72","type":"image/png"},{"src":"/img/siteicon/android-chrome-96x96.png","sizes":"96x96","type":"image/png"},{"src":"/img/siteicon/android-chrome-144x144.png","sizes":"144x144","type":"image/png"},{"src":"/img/siteicon/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/img/siteicon/android-chrome-256x256.png","sizes":"256x256","type":"image/png"},{"src":"/img/siteicon/android-chrome-384x384.png","sizes":"384x384","type":"image/png"},{"src":"/img/siteicon/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}],"theme_color":"#000000","background_color":"#000000","display":"standalone"}]]></content>
       
     </entry>
     
@@ -32,21 +32,10 @@
     
     <entry>
       <title></title>
-      <link href="/img/siteicon/favicon_package_v0.16/README.html"/>
-      <url>/img/siteicon/favicon_package_v0.16/README.html</url>
+      <link href="/img/siteicon/README.html"/>
+      <url>/img/siteicon/README.html</url>
       
         <content type="html"><![CDATA[<h1 id="Your-Favicon-Package"><a href="#Your-Favicon-Package" class="headerlink" title="Your Favicon Package"></a>Your Favicon Package</h1><p>This package was generated with <a href="https://realfavicongenerator.net/">RealFaviconGenerator</a> <a href="https://realfavicongenerator.net/change_log#v0.16">v0.16</a></p><h2 id="Install-instructions"><a href="#Install-instructions" class="headerlink" title="Install instructions"></a>Install instructions</h2><p>To install this package:</p><p>Extract this package in <code>&lt;web site&gt;/img/siteicon/</code>. If your site is <code><a href="http://www.example.com/">http://www.example.com</a></code>, you should be able to access a file named <code><a href="http://www.example.com/img/siteicon/favicon.ico">http://www.example.com/img/siteicon/favicon.ico</a></code>.</p><p>Insert the following code in the <code>head</code> section of your pages:</p><pre><code>&lt;link rel=&quot;apple-touch-icon&quot; sizes=&quot;180x180&quot; href=&quot;/img/siteicon/apple-touch-icon.png&quot;&gt;&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;32x32&quot; href=&quot;/img/siteicon/favicon-32x32.png&quot;&gt;&lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; sizes=&quot;16x16&quot; href=&quot;/img/siteicon/favicon-16x16.png&quot;&gt;&lt;link rel=&quot;manifest&quot; href=&quot;/img/siteicon/site.webmanifest&quot;&gt;&lt;link rel=&quot;mask-icon&quot; href=&quot;/img/siteicon/safari-pinned-tab.svg&quot; color=&quot;#5bbad5&quot;&gt;&lt;link rel=&quot;shortcut icon&quot; href=&quot;/img/siteicon/favicon.ico&quot;&gt;&lt;meta name=&quot;apple-mobile-web-app-title&quot; content=&quot;ybwowen&#39;s blog&quot;&gt;&lt;meta name=&quot;application-name&quot; content=&quot;ybwowen&#39;s blog&quot;&gt;&lt;meta name=&quot;msapplication-TileColor&quot; content=&quot;#2b5797&quot;&gt;&lt;meta name=&quot;msapplication-config&quot; content=&quot;/img/siteicon/browserconfig.xml&quot;&gt;&lt;meta name=&quot;theme-color&quot; content=&quot;#ffffff&quot;&gt;</code></pre><p><em>Optional</em> - Check your favicon with the <a href="https://realfavicongenerator.net/favicon_checker">favicon checker</a></p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/img/siteicon/favicon_package_v0.16/manifest.json"/>
-      <url>/img/siteicon/favicon_package_v0.16/manifest.json</url>
-      
-        <content type="html"><![CDATA[{"lang":"zh-CN","dir":"ltr","name":"ybwowen's blog","discription":"ybwowen的个人博客","start_url":"/","short_name":"ybwowen","scope":"/","icons":[{"src":"/img/siteicon/android-chrome-36x36.png","sizes":"36x36","type":"image/png"},{"src":"/img/siteicon/android-chrome-48x48.png","sizes":"48x48","type":"image/png"},{"src":"/img/siteicon/android-chrome-72x72.png","sizes":"72x72","type":"image/png"},{"src":"/img/siteicon/android-chrome-96x96.png","sizes":"96x96","type":"image/png"},{"src":"/img/siteicon/android-chrome-144x144.png","sizes":"144x144","type":"image/png"},{"src":"/img/siteicon/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/img/siteicon/android-chrome-256x256.png","sizes":"256x256","type":"image/png"},{"src":"/img/siteicon/android-chrome-384x384.png","sizes":"384x384","type":"image/png"},{"src":"/img/siteicon/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}],"theme_color":"#000000","background_color":"#000000","display":"standalone"}]]></content>
       
     </entry>
     
