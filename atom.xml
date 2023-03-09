@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-03-09T13:25:12.654Z</updated>
+  <updated>2023-03-09T14:12:03.640Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title>Hello World</title>
     <link href="http://example.com/posts/4a17b156.html"/>
     <id>http://example.com/posts/4a17b156.html</id>
-    <published>2023-03-09T13:25:12.654Z</published>
-    <updated>2023-03-09T13:25:12.654Z</updated>
+    <published>2023-03-09T14:12:03.640Z</published>
+    <updated>2023-03-09T14:12:03.640Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
@@ -40,15 +40,17 @@
     <title>ybw的高等代数笔记</title>
     <link href="http://example.com/posts/0.html"/>
     <id>http://example.com/posts/0.html</id>
-    <published>2023-03-09T13:25:12.654Z</published>
-    <updated>2023-03-09T13:25:12.654Z</updated>
+    <published>2023-03-09T14:12:03.640Z</published>
+    <updated>2023-03-09T14:12:03.640Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="ybw的高等代数笔记"><a href="#ybw的高等代数笔记" class="headerlink" title="ybw的高等代数笔记"></a>ybw的高等代数笔记</h1><p>ybw的个人笔记 记录一下ybw个人的学习高等代数的过程，不一定具有参考价值</p><p>使用教材：丘维声《高等代数》（上、下册）2019清华大学出版社</p><p>笔记从<strong>线性空间</strong>开始，顺序按照丘维声的网课</p><p>公式测试：</p><p>$\int ybw = vegetable$</p><h2 id="Chapter-8-线性空间"><a href="#Chapter-8-线性空间" class="headerlink" title="Chapter 8 线性空间"></a>Chapter 8 线性空间</h2><h3 id="8-1-域F上的线性空间和维数"><a href="#8-1-域F上的线性空间和维数" class="headerlink" title="8.1 域F上的线性空间和维数"></a>8.1 域F上的线性空间和维数</h3><ol><li><p>向量集的线性相关和线性无关性 <br/><br> 如果向量集是有限集 与向量组相同<br> 如果是<strong>无限集</strong> 那么 <br/><br> 线性相关：有一个有限子集线性相关 <br/><br> 线性无关：任意有限子集线性无关</p></li><li><blockquote><p><strong>定理：</strong> 任意域$F$上的任意线性空间$V$都有一个基 <br/></p></blockquote><p> 证明需要用到Zorn引理：<br/></p><blockquote><p><strong>Zorn引理：</strong> 若一个偏序集$S$的所有链都有上界，则$S$有一个极大元素</p></blockquote><p> 取偏序集$S = \{ B_i \}$ ，其中$B_i$是线性无关的向量集<br/><br> 任取一条链$T = \{ B_i | i \in I \}$ ，取其$B = \bigcup _{i \in I} B_i$，证明$B$为上界，即$B \in S$ ，即$B$线性无关。反证法易得。     <br/><br> 则取极大元素$A$，验证$A$为$V$的一个基即可（分$v\in A$和$v \notin A$讨论）</p></li><li></li></ol>]]></content>
+    <content type="html"><![CDATA[<p>ybw的个人笔记 记录一下ybw个人的学习高等代数的过程，不一定具有参考价值<br>使用教材：丘维声《高等代数》（上、下册）2019清华大学出版社<br>笔记从<strong>线性空间</strong>开始，顺序按照丘维声的网课</p><p>公式测试：</p><script type="math/tex; mode=display">\int ybw = vegetable</script><h2 id="Chapter-8-线性空间"><a href="#Chapter-8-线性空间" class="headerlink" title="Chapter 8 线性空间"></a>Chapter 8 线性空间</h2><h3 id="8-1-域F上的线性空间和维数"><a href="#8-1-域F上的线性空间和维数" class="headerlink" title="8.1 域F上的线性空间和维数"></a>8.1 域F上的线性空间和维数</h3><ol><li><p>向量集的线性相关和线性无关性<br> 如果向量集是有限集 与向量组相同<br> 如果是<strong>无限集</strong> 那么<br> 线性相关：有一个有限子集线性相关<br> 线性无关：任意有限子集线性无关</p></li><li><blockquote><p><strong>定理：</strong> 任意域$F$上的任意线性空间$V$都有一个基 </p></blockquote><p> 证明需要用到Zorn引理：</p><blockquote><p><strong>Zorn引理：</strong> 若一个偏序集$S$的所有链都有上界，则$S$有一个极大元素</p></blockquote><p> 取偏序集$S = \{ B_i \}$ ，其中$B_i$是线性无关的向量集<br> 任取一条链</p><script type="math/tex; mode=display">T = \{ B_i | i \in I \}</script><p> 取 </p><script type="math/tex; mode=display">B = \bigcup _{i \in I} B_i</script><p> 我们要证明的就是 $B$为上界，即$B \in S$ ，即$B$线性无关。反证法易得。<br> 则取极大元素$A$，验证$A$为$V$的一个基即可（分$v\in A$和$v \notin A$讨论）</p></li><li><p>维数的定义<br>设$W$是线性空间$V$的一组基，则 $\dim V = \left| W \right|$<br>这也意味着，如果$W$是一个无限集，那么，$\dim V = +\infty$</p></li></ol>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;ybw的高等代数笔记&quot;&gt;&lt;a href=&quot;#ybw的高等代数笔记&quot; class=&quot;headerlink&quot; title=&quot;ybw的高等代数笔记&quot;&gt;&lt;/a&gt;ybw的高等代数笔记&lt;/h1&gt;&lt;p&gt;ybw的个人笔记 记录一下ybw个人的学习高等代数的过程，不一定具有参考价值</summary>
+    <summary type="html">&lt;p&gt;ybw的个人笔记 记录一下ybw个人的学习高等代数的过程，不一定具有参考价值&lt;br&gt;使用教材：丘维声《高等代数》（上、下册）2019清华大学出版社&lt;br&gt;笔记从&lt;strong&gt;线性空间&lt;/strong&gt;开始，顺序按照丘维声的网课&lt;/p&gt;
+&lt;p&gt;公式测试：&lt;/p&gt;
+&lt;scri</summary>
       
     
     
