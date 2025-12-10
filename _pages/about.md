@@ -9,7 +9,7 @@ redirect_from:
 
 a junior undergraduate student at Shanghai Jiao Tong University, Paris Elite Institute of Technology, majoring in Information Engineering and French. I have the privilege of working with Prof. [Junchi Yan](https://thinklab.sjtu.edu.cn/) and Asst. Prof. [Xiaosong Jia](https://jiaxiaosong1002.github.io/).
 
-I am set to graduate in June 2027 and am actively seeking research intern oppotunities for Summer 2026.
+I am set to graduate in June 2027 and am actively seeking research intern oppotunities.
 
 ## Research
 
@@ -29,7 +29,7 @@ I study latent-space misalignment between action tokens and vision–language pe
 ## News
 
 - **Oct 2025** – Awarded the **RM Award (Algorithm)**; contributed to SLAM and navigation supporting our team’s **National Championship** at RoboMaster 2025.  
-- **Sep 2025** – Joined RethinkLab, SJTU as a research assistant, focusing on VLA.
+- **Sep 2025** – Joined RethinkLab, SJTU as a research assistant.
 - **Aug 2025** – Our team won the **RoboMaster University Championship National Champion (2025)**.  
 - **Apr 2025** – Received the **National Scholarship 2025** (top 0.2% nationwide).  
 - **Feb 2025** – Selected as **Finalist (Top 2%)** in the Mathematical Contest in Modeling (MCM), Problem B.  
