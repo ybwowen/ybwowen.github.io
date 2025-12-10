@@ -34,5 +34,6 @@ I study latent-space misalignment between action tokens and vision–language pe
 - **Aug 2025** – Our team won the **RoboMaster University Championship National Champion (2025)**.  
 - **Feb 2025** – Selected as **Finalist (Top 2%)** in the Mathematical Contest in Modeling (MCM), Problem B.  
 - **Sep 2024** – Received the **National Scholarship 2024** (top 0.2% nationwide).  
+- **Aug 2024 – Aug 2025** – Served as Vice-Captain and Algorithm Lead of Team Jiao Loong, directing work on SLAM, motion planning, and embedded autonomy.
 - **Aug 2024** – Our team won the **RoboMaster University Championship National Champion (2024)**.  
-- **Oct 2023 – Aug 2025** – Served as Vice-Captain and Algorithm Lead of Team Jiao Loong, directing work on SLAM, motion planning, and embedded autonomy.
+- **Oct 2023** - Joined Team Jiao Loong, RoboMaster Team of Shanghai Jiao Tong University.
