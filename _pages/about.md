@@ -28,11 +28,11 @@ I study latent-space misalignment between action tokens and vision–language pe
 
 ## News
 
-- **Oct 2025** – Awarded the **RM Award (Algorithm)**; contributed to SLAM and navigation supporting our team’s **National Championship** at RoboMaster 2025.  
+- **Oct 2025** – Awarded the **RM Award (Algorithm)**; contributed to SLAM and navigation supporting our team’s **National Championship** at RoboMaster 2025.
+- **Sep 2025** – Received the **National Scholarship 2025** (top 0.2% nationwide).  
 - **Sep 2025** – Joined RethinkLab, SJTU as a research assistant.
 - **Aug 2025** – Our team won the **RoboMaster University Championship National Champion (2025)**.  
-- **Apr 2025** – Received the **National Scholarship 2025** (top 0.2% nationwide).  
 - **Feb 2025** – Selected as **Finalist (Top 2%)** in the Mathematical Contest in Modeling (MCM), Problem B.  
-- **Oct 2024** – Received the **National Scholarship 2024** (top 0.2% nationwide).  
+- **Sep 2024** – Received the **National Scholarship 2024** (top 0.2% nationwide).  
 - **Aug 2024** – Our team won the **RoboMaster University Championship National Champion (2024)**.  
 - **Oct 2023 – Aug 2025** – Served as Vice-Captain and Algorithm Lead of Team Jiao Loong, directing work on SLAM, motion planning, and embedded autonomy.
