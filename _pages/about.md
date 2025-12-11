@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-a junior undergraduate student at Shanghai Jiao Tong University, Paris Elite Institute of Technology, majoring in Information Engineering and French. I have the privilege of working with Prof. [Junchi Yan](https://thinklab.sjtu.edu.cn/) and Asst. Prof. [Xiaosong Jia](https://jiaxiaosong1002.github.io/).
+a junior undergraduate student at Shanghai Jiao Tong University, Paris Elite Institute of Technology, majoring in Information Engineering and French. I have the privilege of working with **Prof. [Junchi Yan](https://thinklab.sjtu.edu.cn/)** and **Prof. [Xiaosong Jia](https://jiaxiaosong1002.github.io/)**.
 
 I am set to graduate in June 2027 and am actively seeking research intern oppotunities.
 
@@ -15,7 +15,7 @@ I am set to graduate in June 2027 and am actively seeking research intern oppotu
 
 My research focuses on **robotics** and **vision–language–action (VLA) models**, with an emphasis on understanding how multimodal representations influence perception, action generation, and generalization in autonomous systems.
 
-My broader technical interests include **SLAM**, **motion planning**, **sensor fusion**, **embedded systems**, and **robotic autonomy**, informed by extensive hands-on experience from **RoboMaster competitions**.
+My broader technical interests include **SLAM**, **motion planning**, **sensor fusion**, **embedded systems**, and **robotic autonomy**, informed by extensive hands-on experience from **RoboMaster competitions**, where I earned **two consecutive national championships**.
 
 At the **RethinkLab, Shanghai Jiao Tong University**, I work with **Prof. Junchi Yan** and **Asst. Prof. Xiaosong Jia** on representation alignment and mechanism interpretability in VLA-based robotic systems.
 
