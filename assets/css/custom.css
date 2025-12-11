@@ -1,0 +1,183 @@
+/* ============================================
+   Global typography & spacing (homepage tone)
+   ============================================ */
+
+.page__content {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* 主标题、副标题间距稍紧，学术主页风格 */
+.page__content h1 {
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+.page__content h2 {
+  margin-top: 2.2rem;
+  margin-bottom: 0.8rem;
+  font-weight: 650;
+}
+.page__content h3 {
+  margin-top: 1.6rem;
+  margin-bottom: 0.4rem;
+  font-weight: 620;
+}
+
+/* 段落行距与段间距统一 */
+.page__content p {
+  margin-top: 0;
+  margin-bottom: 0.85rem;
+}
+
+/* ============================================
+   Hero block
+   ============================================ */
+
+.hero-block {
+  margin-bottom: 1.8rem;
+}
+
+/* HERO IMAGE — 16:9、无出血、caption 居中 */
+.page__content .hero-figure {
+  margin: 1.2rem 0 0.6rem 0;
+  text-align: center !important;           /* caption 居中 */
+}
+
+.page__content .hero-figure img {
+  width: 100%;
+  max-width: 100%;                         /* 不超出内容宽度 */
+  height: auto;
+  aspect-ratio: 16 / 9;                    /* 统一比例 */
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 8px 22px rgba(0,0,0,.08);
+}
+
+/* Hero caption 居中、浅灰色、略小一号 */
+.page__content .hero-figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #666;
+  text-align: center !important;           /* 强制覆盖主题默认样式 */
+  width: 100%;
+  display: block;
+}
+
+/* 分割线，宽度略小于正文宽 */
+.hero-divider {
+  margin: 1.8rem auto 1.5rem;
+  max-width: 720px;
+  border: 0;
+  border-top: 1px solid #e2e2e2;
+}
+
+/* Dark mode 调整 */
+@media (prefers-color-scheme: dark) {
+  .page__content .hero-figure img {
+    box-shadow: 0 8px 22px rgba(0,0,0,.55);
+  }
+  .page__content .hero-figure figcaption {
+    color: #b8b8b8;
+  }
+  .hero-divider {
+    border-top-color: #444;
+  }
+}
+
+/* ============================================
+   Back-to-back champion cards
+   ============================================ */
+
+.figure-pair {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin: 0.8rem 0 1.5rem;
+}
+@media (min-width: 768px) {
+  .figure-pair {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.figure-card {
+  width: 100%;
+  max-width: 520px;
+  text-align: center !important;    /* caption 居中 */
+}
+
+.figure-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.figure-card img:hover {
+  transform: scale(1.015);
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+
+.figure-card figcaption {
+  margin-top: 0.4rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+  text-align: center !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .figure-card figcaption {
+    color: #ccc;
+  }
+}
+
+/* ============================================
+   Project block formatting (Ongoing Work)
+   ============================================ */
+
+.project-block {
+  margin-bottom: 1.8rem;
+}
+
+.project-title {
+  font-size: 1.05rem;
+  font-weight: 650;
+  margin-bottom: 0.15rem;
+}
+
+.project-meta {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.project-time {
+  color: #888;
+}
+
+.project-desc {
+  margin-top: 0.3rem;
+  font-size: 0.97rem;
+  line-height: 1.55;
+}
+
+
+/* ===== FORCE CENTER CAPTION FOR FIGURE-CARD ===== */
+.page__content figure.figure-card {
+  text-align: center !important;
+}
+
+.page__content figure.figure-card figcaption {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+  width: 100% !important;
+}
