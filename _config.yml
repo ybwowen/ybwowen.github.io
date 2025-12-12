@@ -23,7 +23,7 @@ repository               : "ybwowen/ybwowen.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Bowen Yang"
   pronouns         : # example: "she/her"  
   bio              : "A Junior Student at Shanghai Jiao Tong University, focusing on Robotics."  # A short bio or tagline for the author
