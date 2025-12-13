@@ -9,7 +9,6 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-color_theme_default      : "dark"    # "dark", "light", or "system" (match visitors' OS)
 title                    : "Bowen Yang's Homepage"  # Update this with the title of your site
 title_separator          : "-"
 name                     : &name "Bowen Yang"
