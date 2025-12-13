@@ -88,52 +88,79 @@
 }
 
 /* ============================================
-   Back-to-back champion cards
+   Back-to-back champion cards (FIXED)
    ============================================ */
 
 .figure-pair {
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 520px));
-  justify-items: center;
-  justify-content: center;
-  margin: 0.8rem auto 1.5rem;
+  /* 强制两列等宽，minmax(0, 1fr) 防止图片尺寸撑破网格 */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin: 1.5rem auto 2rem;
   width: 100%;
   max-width: 1100px;
 }
 
+/* 关键修复：figure 标签默认有 margin，这会导致网格内宽度计算不一致 */
 .figure-card {
-  width: 100%;
-  max-width: 520px;
-  text-align: center !important;    /* caption 居中 */
+  margin: 0 !important;      /* 去除浏览器默认边距 */
+  width: 100%;               /* 强制占满网格单元 */
+  text-align: center !important;
+  position: relative;        /* 确保定位稳定 */
 }
 
-.figure-card img {
+/* 让 picture 负责“几何形状”和占位 */
+.figure-card picture {
+  display: block;
   width: 100%;
+  /* 这里的 aspect-ratio 非常重要，保持 16:9 */
   aspect-ratio: 16 / 9;
-  object-fit: cover;
+  position: relative;
+  overflow: hidden;
   border-radius: 12px;
+  /* 修复部分浏览器下图片高度坍塌的问题 */
+  background-color: #f0f0f0; 
+}
+
+/* 图片绝对定位填满 picture 容器 */
+.page__content .figure-card picture > img {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  display: block;
   box-shadow: 0 8px 24px rgba(0,0,0,.08);
   transition: transform .25s ease, box-shadow .25s ease;
+  margin: 0; /* 确保图片本身没有 margin */
 }
 
-.figure-card img:hover {
+.page__content .figure-card picture > img:hover {
   transform: scale(1.015);
   box-shadow: 0 10px 30px rgba(0,0,0,.15);
 }
 
 .figure-card figcaption {
-  margin-top: 0.4rem;
+  margin-top: 0.6rem;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600; /* 加粗一点更好看 */
   color: #444;
   text-align: center !important;
+  width: 100%;
+}
+
+/* 调整断点：建议调大一点 (比如 960px 或 1000px)
+   防止在 ipad 横屏或窄窗口下两个图片挤在一起变得太小 */
+@media (max-width: 960px) {
+  .figure-pair {
+    grid-template-columns: 1fr; /* 变为单列 */
+    max-width: 640px;           /* 限制单列时的最大宽度，防止图片过大 */
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-  .figure-card figcaption {
-    color: #ccc;
-  }
+  .figure-card figcaption { color: #ccc; }
+  .figure-card picture { background-color: #333; }
 }
 
 /* ============================================
@@ -164,18 +191,4 @@
   margin-top: 0.3rem;
   font-size: 0.97rem;
   line-height: 1.55;
-}
-
-
-/* ===== FORCE CENTER CAPTION FOR FIGURE-CARD ===== */
-.page__content figure.figure-card {
-  text-align: center !important;
-}
-
-.page__content figure.figure-card figcaption {
-  text-align: center !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  display: block !important;
-  width: 100% !important;
 }
