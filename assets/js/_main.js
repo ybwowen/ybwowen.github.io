@@ -2,11 +2,18 @@
    Various functions that we want to use within the template
    ========================================================================== */
 
+const htmlElement = document.documentElement;
+const validThemeOptions = ["dark", "light", "system"];
+const defaultTheme = validThemeOptions.includes(htmlElement.dataset.defaultTheme)
+  ? htmlElement.dataset.defaultTheme
+  : "system";
+
 // Determine the expected state of the theme toggle, which can be "dark", "light", or
-// "system". Default is "system".
+// "system". The fallback comes from the HTML data attribute so that we can configure
+// the initial look without JS.
 let determineThemeSetting = () => {
   let themeSetting = localStorage.getItem("theme");
-  return (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") ? "system" : themeSetting;
+  return validThemeOptions.includes(themeSetting) ? themeSetting : defaultTheme;
 };
 
 // Determine the computed theme, which can be "dark" or "light". If the theme setting is
@@ -16,32 +23,34 @@ let determineComputedTheme = () => {
   if (themeSetting != "system") {
     return themeSetting;
   }
-  return (userPref && userPref("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
+  return prefersDarkSchemeQuery.matches ? "dark" : "light";
 };
 
 // detect OS/browser preference
-const browserPref = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+const prefersDarkSchemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+const browserPref = prefersDarkSchemeQuery.matches ? 'dark' : 'light';
 
 // Set the theme on page load or when explicitly called
 let setTheme = (theme) => {
+  const configuredDefault = defaultTheme === "system" ? browserPref : defaultTheme;
   const use_theme =
     theme ||
     localStorage.getItem("theme") ||
     $("html").attr("data-theme") ||
-    browserPref;
+    configuredDefault;
 
   if (use_theme === "dark") {
-    $("html").attr("data-theme", "dark");
+    htmlElement.setAttribute("data-theme", "dark");
     $("#theme-icon").removeClass("fa-sun").addClass("fa-moon");
   } else if (use_theme === "light") {
-    $("html").removeAttr("data-theme");
+    htmlElement.removeAttribute("data-theme");
     $("#theme-icon").removeClass("fa-moon").addClass("fa-sun");
   }
 };
 
 // Toggle the theme manually
 var toggleTheme = () => {
-  const current_theme = $("html").attr("data-theme");
+  const current_theme = htmlElement.getAttribute("data-theme");
   const new_theme = current_theme === "dark" ? "light" : "dark";
   localStorage.setItem("theme", new_theme);
   setTheme(new_theme);
@@ -92,12 +101,13 @@ $(document).ready(function () {
 
   // If the user hasn't chosen a theme, follow the OS preference
   setTheme();
-  window.matchMedia('(prefers-color-scheme: dark)')
-        .addEventListener("change", (e) => {
-          if (!localStorage.getItem("theme")) {
-            setTheme(e.matches ? "dark" : "light");
-          }
-        });
+  if (defaultTheme === "system") {
+    prefersDarkSchemeQuery.addEventListener("change", (e) => {
+      if (!localStorage.getItem("theme")) {
+        setTheme(e.matches ? "dark" : "light");
+      }
+    });
+  }
 
   // Enable the theme toggle
   $('#theme-toggle').on('click', toggleTheme);

@@ -3,9 +3,13 @@ layout: compress
 ---
 
 {% include base_path %}
+{% assign default_color_theme = site.color_theme_default | downcase %}
+{% if default_color_theme != "dark" and default_color_theme != "light" and default_color_theme != "system" %}
+  {% assign default_color_theme = "system" %}
+{% endif %}
 
 <!doctype html>
-<html lang="{{ site.locale | slice: 0,2 }}" class="no-js"{% if site.site_theme == "dark" %} data-theme="dark"{% endif %}>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js" data-default-theme="{{ default_color_theme }}"{% if default_color_theme == "dark" %} data-theme="dark"{% endif %}>
   <head>
     {% include head.html %}
     {% include head/custom.html %}
