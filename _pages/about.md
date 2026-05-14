@@ -79,38 +79,94 @@ My broader technical interests include **SLAM**, **motion planning**, **sensor f
 </div>
 
 
-## Publication
+## Featured Project
 
-<div class="project-block">
+<div class="featured-project">
+  <a class="featured-project-media" href="https://guidedvla.github.io/project_page/" target="_blank" rel="noopener noreferrer" aria-label="Open the GuidedVLA project page">
+    <picture>
+      <source type="image/webp"
+              srcset="/assets/img/guidedvla/guidedvla-teaser-800.webp 800w,
+                      /assets/img/guidedvla/guidedvla-teaser-1200.webp 1200w,
+                      /assets/img/guidedvla/guidedvla-teaser-1600.webp 1600w"
+              sizes="(max-width: 720px) 100vw, 760px">
+      <img src="/assets/img/guidedvla/guidedvla-teaser-1200.webp"
+           alt="GuidedVLA overview: action attention specialization for object grounding, skill logic, and spatial geometry"
+           loading="lazy">
+    </picture>
+  </a>
+
+  <div class="featured-project-body">
+    <div class="project-kicker">RSS 2026 · Open Source</div>
+
+    <h3 class="featured-project-title">
+      GuidedVLA: Specifying Task-Relevant Factors via Plug-and-Play Action Attention Specialization
+    </h3>
+
+    <p class="project-authors">
+      Xiaosong Jia<sup>*</sup>, <strong>Bowen Yang<sup>*</sup></strong>, Zuhao Ge<sup>*</sup>,
+      Xian Nie<sup>*</sup>, Yuchen Zhou<sup>*</sup>, Cunxin Fan<sup>*</sup>, et al.
+      <span class="project-note">Equal contribution.</span>
+    </p>
+
+    <p class="project-desc">
+      We guide VLA action decoders to focus on task-relevant factors by assigning dedicated attention heads to
+      object grounding, temporal skill logic, and spatial geometry. The project now includes the paper, arXiv preprint,
+      code, checkpoints, and dataset.
+    </p>
+
+    <ul class="project-highlights">
+      <li><strong>Interpretable specialization:</strong> object, skill, and depth heads expose clearer task factors.</li>
+      <li><strong>Robust generalization:</strong> improved performance across simulation benchmarks and real-robot settings.</li>
+      <li><strong>Released resources:</strong> open-source implementation, model checkpoint, and LIBERO dataset.</li>
+    </ul>
+
+    <div class="project-link-list" aria-label="GuidedVLA resources">
+      <a class="project-link project-link-primary" href="https://guidedvla.github.io/project_page/" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link" aria-hidden="true"></i> Project</a>
+      <a class="project-link" href="https://guidedvla.github.io/project_page/RSS26___GuidedVLA.pdf" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-pdf" aria-hidden="true"></i> Paper</a>
+      <a class="project-link" href="https://arxiv.org/abs/2605.12369" target="_blank" rel="noopener noreferrer"><i class="fa fa-scroll" aria-hidden="true"></i> arXiv</a>
+      <a class="project-link" href="https://github.com/GuidedVLA/GuidedVLA" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+      <a class="project-link" href="https://huggingface.co/ybwowen/pi0-libero-object-depth-skill" target="_blank" rel="noopener noreferrer"><i class="fa fa-cube" aria-hidden="true"></i> Checkpoint</a>
+      <a class="project-link" href="https://huggingface.co/datasets/ybwowen/libero" target="_blank" rel="noopener noreferrer"><i class="fa fa-database" aria-hidden="true"></i> Dataset</a>
+    </div>
+  </div>
+</div>
+
+## Publications
+
+<div class="project-block publication-entry">
   <div class="project-title">
-    GuidedVLA: Specifying Task-Relevant Factors via Plug-and-Play Action Attention Specialization
+    <a href="/publication/2026-05-12-guidedvla">
+      GuidedVLA: Specifying Task-Relevant Factors via Plug-and-Play Action Attention Specialization
+    </a>
   </div>
 
   <div class="project-meta">
-    Robotics: Science and Systems (RSS), 2026  
-    <span class="project-time">Published: Apr 27, 2026</span>
+    Robotics: Science and Systems (RSS), 2026
   </div>
 
   <p class="project-desc">
-    Xiaosong Jia<sup>*</sup>, <strong>Bowen Yang<sup>*</sup></strong>, Zuhao Ge<sup>*</sup>, 
-    Xian Nie<sup>*</sup>, Yuchen Zhou<sup>*</sup>, Cunxin Fan<sup>*</sup>, 
-    Yufeng Li, Yilin Chai, Chao Jing, Zijian Liang, Qingwen Bu, Haidong Cao, Chao Wu, 
-    Qifeng Li, Zhenjie Yang, Chenhe Zhang, Hongyang Li, Zuxuan Wu, Junchi Yan, Yu-Gang Jiang.
+    Xiaosong Jia<sup>*</sup>, <strong>Bowen Yang<sup>*</sup></strong>, Zuhao Ge<sup>*</sup>,
+    Xian Nie<sup>*</sup>, Yuchen Zhou<sup>*</sup>, Cunxin Fan<sup>*</sup>, et al.
+    <span class="project-note">Equal contribution.</span>
   </p>
 
   <p class="project-desc">
-    <sup>*</sup> Equal contribution.
+    GuidedVLA specializes VLA action-decoder attention heads toward object grounding, temporal skill logic, and spatial geometry.
   </p>
 
-  <p class="project-desc">
-    <strong>TL;DR:</strong> We explicitly guide the action decoder of VLA models to extract decoupled task-relevant factors by specifying specialized attention heads.
-  </p>
+  <div class="project-link-list" aria-label="GuidedVLA publication resources">
+    <a class="project-link project-link-primary" href="/publication/2026-05-12-guidedvla"><i class="fa fa-link" aria-hidden="true"></i> Publication</a>
+    <a class="project-link" href="https://guidedvla.github.io/project_page/" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link" aria-hidden="true"></i> Project</a>
+    <a class="project-link" href="https://arxiv.org/abs/2605.12369" target="_blank" rel="noopener noreferrer"><i class="fa fa-scroll" aria-hidden="true"></i> arXiv</a>
+    <a class="project-link" href="https://github.com/GuidedVLA/GuidedVLA" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+  </div>
 </div>
 
 ---
 
 ## News
 
+- <strong>May 2026</strong> – <strong>GuidedVLA</strong> is now open-source, with <a href="https://github.com/GuidedVLA/GuidedVLA">code</a>, <a href="https://huggingface.co/ybwowen/pi0-libero-object-depth-skill">checkpoint</a>, and <a href="https://huggingface.co/datasets/ybwowen/libero">dataset</a> released alongside the <a href="https://arxiv.org/abs/2605.12369">arXiv preprint</a>.
 - <strong>Apr 2026</strong> – Our paper <strong>GuidedVLA: Specifying Task-Relevant Factors via Plug-and-Play Action Attention Specialization</strong> was accepted to <strong>Robotics: Science and Systems (RSS) 2026</strong>.
 - <strong>Oct 2025</strong> – Awarded the <strong>RM Award (Algorithm)</strong>; contributed to SLAM and navigation supporting our team’s <strong>National Championship</strong> at RoboMaster 2025.
 - <strong>Sep 2025</strong> – Received the <strong>National Scholarship 2025</strong> (top 0.2% nationwide).
