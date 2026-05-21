@@ -1,5 +1,5 @@
 ---
-title: "RM Award 2025 (Algorithm) Interview - Highest Individual Honor Award in Robomaster"
+title: "RM Award 2025 (Algorithm) Interview - Highest Individual Honor Award in RoboMaster"
 collection: talks
 type: "Talk"
 permalink: /talks/RM2025_Award_interview
