@@ -168,7 +168,7 @@ My broader technical interests include **SLAM**, **motion planning**, **sensor f
 
 ## News
 
-- <strong>May 2026</strong> – Shared <strong>GuidedVLA</strong> in <a href="https://www.bilibili.com/video/BV16nL26uELc/">Lumina Talk #36</a>, hosted by the Lumina Embodied Intelligence Community.
+- <strong>May 2026</strong> – <strong>Prof. Xiaosong Jia</strong> shared <strong>GuidedVLA</strong> in <a href="https://www.bilibili.com/video/BV16nL26uELc/">Lumina Talk #36</a>, hosted by the Lumina Embodied Intelligence Community.
 - <strong>May 2026</strong> – <strong>GuidedVLA</strong> is now open-source, with <a href="https://github.com/GuidedVLA/GuidedVLA">code</a>, <a href="https://huggingface.co/ybwowen/pi0-libero-object-depth-skill">checkpoint</a>, and <a href="https://huggingface.co/datasets/ybwowen/libero">dataset</a> released alongside the <a href="https://arxiv.org/abs/2605.12369">arXiv preprint</a>.
 - <strong>Apr 2026</strong> – Our paper <strong>GuidedVLA: Specifying Task-Relevant Factors via Plug-and-Play Action Attention Specialization</strong> was accepted to <strong>Robotics: Science and Systems (RSS) 2026</strong>.
 - <strong>Oct 2025</strong> – Awarded the <strong>RM Award (Algorithm)</strong>; contributed to SLAM and navigation supporting our team’s <strong>National Championship</strong> at RoboMaster 2025.

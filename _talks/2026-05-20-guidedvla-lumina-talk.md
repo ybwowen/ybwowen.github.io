@@ -8,4 +8,4 @@ venue: "Lumina Embodied Intelligence Community"
 location: "Online"
 ---
 
-I was invited to share GuidedVLA in Lumina Talk #36, hosted by the Lumina Embodied Intelligence Community. You can watch the recording on Bilibili [here](https://www.bilibili.com/video/BV16nL26uELc/).
+Prof. Xiaosong Jia presented GuidedVLA in Lumina Talk #36, hosted by the Lumina Embodied Intelligence Community. You can watch the recording on Bilibili [here](https://www.bilibili.com/video/BV16nL26uELc/).
