@@ -57,13 +57,14 @@
         <p>Recommended citation: {{ post.citation }}</p>
       {% endif %}
 
-      {% if post.projecturl or post.paperurl or post.arxivurl or post.codeurl or post.checkpointurl or post.dataseturl or post.slidesurl or post.bibtexurl %}
+      {% if post.projecturl or post.paperurl or post.arxivurl or post.talkurl or post.codeurl or post.checkpointurl or post.dataseturl or post.slidesurl or post.bibtexurl %}
         <p class="pub-links">
           Resources:
           {% if post.projecturl %}<a href="{{ post.projecturl }}" target="_blank" rel="noopener noreferrer">Project</a>{% endif %}
           {% if post.projecturl and post.paperurl %} | {% endif %}
           {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">Paper</a>{% endif %}
           {% if post.arxivurl %} | <a href="{{ post.arxivurl }}" target="_blank" rel="noopener noreferrer">arXiv</a>{% endif %}
+          {% if post.talkurl %} | <a href="{{ post.talkurl }}" target="_blank" rel="noopener noreferrer">Talk</a>{% endif %}
           {% if post.codeurl %} | <a href="{{ post.codeurl }}" target="_blank" rel="noopener noreferrer">Code</a>{% endif %}
           {% if post.checkpointurl %} | <a href="{{ post.checkpointurl }}" target="_blank" rel="noopener noreferrer">Checkpoint</a>{% endif %}
           {% if post.dataseturl %} | <a href="{{ post.dataseturl }}" target="_blank" rel="noopener noreferrer">Dataset</a>{% endif %}

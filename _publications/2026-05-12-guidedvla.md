@@ -10,6 +10,7 @@ paperurl: "https://guidedvla.github.io/project_page/RSS26___GuidedVLA.pdf"
 arxivurl: "https://arxiv.org/abs/2605.12369"
 projecturl: "https://guidedvla.github.io/project_page/"
 codeurl: "https://github.com/GuidedVLA/GuidedVLA"
+talkurl: "https://www.bilibili.com/video/BV16nL26uELc/"
 checkpointurl: "https://huggingface.co/ybwowen/pi0-libero-object-depth-skill"
 dataseturl: "https://huggingface.co/datasets/ybwowen/libero"
 bibtexurl: "/files/guidedvla.bib"
@@ -35,6 +36,7 @@ GuidedVLA is a framework for building more robust and interpretable Vision-Langu
   <a class="project-link project-link-primary" href="https://guidedvla.github.io/project_page/" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link" aria-hidden="true"></i> Project</a>
   <a class="project-link" href="https://guidedvla.github.io/project_page/RSS26___GuidedVLA.pdf" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-pdf" aria-hidden="true"></i> Paper</a>
   <a class="project-link" href="https://arxiv.org/abs/2605.12369" target="_blank" rel="noopener noreferrer"><i class="fa fa-scroll" aria-hidden="true"></i> arXiv</a>
+  <a class="project-link" href="https://www.bilibili.com/video/BV16nL26uELc/" target="_blank" rel="noopener noreferrer"><i class="fab fa-bilibili" aria-hidden="true"></i> Talk</a>
   <a class="project-link" href="https://github.com/GuidedVLA/GuidedVLA" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
   <a class="project-link" href="https://huggingface.co/ybwowen/pi0-libero-object-depth-skill" target="_blank" rel="noopener noreferrer"><i class="fa fa-cube" aria-hidden="true"></i> Checkpoint</a>
   <a class="project-link" href="https://huggingface.co/datasets/ybwowen/libero" target="_blank" rel="noopener noreferrer"><i class="fa fa-database" aria-hidden="true"></i> Dataset</a>
