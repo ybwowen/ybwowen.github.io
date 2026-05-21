@@ -52,13 +52,14 @@ layout: default
             <p style="font-size: smaller">Recommended citation: {{ page.citation }}</p>
           {% endif %}
 
-          {% if page.projecturl or page.paperurl or page.arxivurl or page.codeurl or page.checkpointurl or page.dataseturl or page.slidesurl or page.bibtexurl %}
+          {% if page.projecturl or page.paperurl or page.arxivurl or page.talkurl or page.codeurl or page.checkpointurl or page.dataseturl or page.slidesurl or page.bibtexurl %}
             <p class="pub-links" style="font-size: smaller">
               Resources:
               {% if page.projecturl %}<a href="{{ page.projecturl }}" target="_blank" rel="noopener noreferrer">Project</a>{% endif %}
               {% if page.projecturl and page.paperurl %} | {% endif %}
               {% if page.paperurl %}<a href="{{ page.paperurl }}" target="_blank" rel="noopener noreferrer">Paper</a>{% endif %}
               {% if page.arxivurl %} | <a href="{{ page.arxivurl }}" target="_blank" rel="noopener noreferrer">arXiv</a>{% endif %}
+              {% if page.talkurl %} | <a href="{{ page.talkurl }}" target="_blank" rel="noopener noreferrer">Talk</a>{% endif %}
               {% if page.codeurl %} | <a href="{{ page.codeurl }}" target="_blank" rel="noopener noreferrer">Code</a>{% endif %}
               {% if page.checkpointurl %} | <a href="{{ page.checkpointurl }}" target="_blank" rel="noopener noreferrer">Checkpoint</a>{% endif %}
               {% if page.dataseturl %} | <a href="{{ page.dataseturl }}" target="_blank" rel="noopener noreferrer">Dataset</a>{% endif %}
