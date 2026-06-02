@@ -136,6 +136,36 @@ My broader technical interests include **SLAM**, **motion planning**, **sensor f
 
 <div class="project-block publication-entry">
   <div class="project-title">
+    <a href="/publication/2026-05-28-elan4d">
+      ELAN4D: Embodiment-Centric 4D Supervision for Vision-Language-Action Models via Plug-and-Play Adaptation
+    </a>
+  </div>
+
+  <div class="project-meta">
+    arXiv preprint, 2026
+  </div>
+
+  <p class="project-desc">
+    Zeyuan He<sup>*</sup>, <strong>Bowen Yang<sup>*</sup></strong>, Zhirui Fang<sup>*</sup>,
+    Keru Zhou<sup>*</sup>, Lei Jiang, Jingjing Qian, Fan Mo, Junchi Yan, Philip Torr,
+    Xiu Li, Li Jiang, Jialin Yu.
+    <span class="project-note">Equal contribution.</span>
+  </p>
+
+  <p class="project-desc">
+    ELAN4D adds embodiment-centric 4D supervision from future robot keypoint tracks to improve VLA robustness under out-of-distribution perturbations.
+  </p>
+
+  <div class="project-link-list" aria-label="ELAN4D publication resources">
+    <a class="project-link project-link-primary" href="/publication/2026-05-28-elan4d"><i class="fa fa-link" aria-hidden="true"></i> Publication</a>
+    <a class="project-link" href="https://arxiv.org/pdf/2605.30484v1" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-pdf" aria-hidden="true"></i> Paper</a>
+    <a class="project-link" href="https://arxiv.org/abs/2605.30484v1" target="_blank" rel="noopener noreferrer"><i class="fa fa-scroll" aria-hidden="true"></i> arXiv</a>
+    <a class="project-link" href="/files/elan4d.bib"><i class="fa fa-quote-right" aria-hidden="true"></i> BibTeX</a>
+  </div>
+</div>
+
+<div class="project-block publication-entry">
+  <div class="project-title">
     <a href="/publication/2026-05-12-guidedvla">
       GuidedVLA: Specifying Task-Relevant Factors via Plug-and-Play Action Attention Specialization
     </a>
@@ -168,6 +198,7 @@ My broader technical interests include **SLAM**, **motion planning**, **sensor f
 
 ## News
 
+- <strong>May 2026</strong> – Our preprint <strong>ELAN4D: Embodiment-Centric 4D Supervision for Vision-Language-Action Models via Plug-and-Play Adaptation</strong> is now available on <a href="https://arxiv.org/abs/2605.30484v1">arXiv</a>.
 - <strong>May 2026</strong> – <strong>Prof. Xiaosong Jia</strong> shared <strong>GuidedVLA</strong> in <a href="https://www.bilibili.com/video/BV16nL26uELc/">Lumina Talk #36</a>, hosted by the Lumina Embodied Intelligence Community.
 - <strong>May 2026</strong> – <strong>GuidedVLA</strong> is now open-source, with <a href="https://github.com/GuidedVLA/GuidedVLA">code</a>, <a href="https://huggingface.co/ybwowen/pi0-libero-object-depth-skill">checkpoint</a>, and <a href="https://huggingface.co/datasets/ybwowen/libero">dataset</a> released alongside the <a href="https://arxiv.org/abs/2605.12369">arXiv preprint</a>.
 - <strong>Apr 2026</strong> – Our paper <strong>GuidedVLA: Specifying Task-Relevant Factors via Plug-and-Play Action Attention Specialization</strong> was accepted to <strong>Robotics: Science and Systems (RSS) 2026</strong>.
