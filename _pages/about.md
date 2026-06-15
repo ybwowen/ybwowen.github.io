@@ -125,6 +125,7 @@ My broader technical interests include **SLAM**, **motion planning**, **sensor f
       <a class="project-link" href="https://guidedvla.github.io/project_page/RSS26___GuidedVLA.pdf" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-pdf" aria-hidden="true"></i> Paper</a>
       <a class="project-link" href="https://arxiv.org/abs/2605.12369" target="_blank" rel="noopener noreferrer"><i class="fa fa-scroll" aria-hidden="true"></i> arXiv</a>
       <a class="project-link" href="https://www.bilibili.com/video/BV16nL26uELc/" target="_blank" rel="noopener noreferrer"><i class="fab fa-bilibili" aria-hidden="true"></i> Talk</a>
+      <a class="project-link" href="https://mp.weixin.qq.com/s/7SD3ulzXL2Xg6izWhs7Eng" target="_blank" rel="noopener noreferrer"><i class="fa fa-newspaper" aria-hidden="true"></i> 机器之心</a>
       <a class="project-link" href="https://github.com/GuidedVLA/GuidedVLA" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
       <a class="project-link" href="https://huggingface.co/ybwowen/pi0-libero-object-depth-skill" target="_blank" rel="noopener noreferrer"><i class="fa fa-cube" aria-hidden="true"></i> Checkpoint</a>
       <a class="project-link" href="https://huggingface.co/datasets/ybwowen/libero" target="_blank" rel="noopener noreferrer"><i class="fa fa-database" aria-hidden="true"></i> Dataset</a>
@@ -199,7 +200,6 @@ My broader technical interests include **SLAM**, **motion planning**, **sensor f
 ## News
 
 - <strong>May 2026</strong> – Our preprint <strong>ELAN4D: Embodiment-Centric 4D Supervision for Vision-Language-Action Models via Plug-and-Play Adaptation</strong> is now available on <a href="https://arxiv.org/abs/2605.30484v1">arXiv</a>.
-- <strong>May 2026</strong> – <strong>Prof. Xiaosong Jia</strong> shared <strong>GuidedVLA</strong> in <a href="https://www.bilibili.com/video/BV16nL26uELc/">Lumina Talk #36</a>, hosted by the Lumina Embodied Intelligence Community.
 - <strong>May 2026</strong> – <strong>GuidedVLA</strong> is now open-source, with <a href="https://github.com/GuidedVLA/GuidedVLA">code</a>, <a href="https://huggingface.co/ybwowen/pi0-libero-object-depth-skill">checkpoint</a>, and <a href="https://huggingface.co/datasets/ybwowen/libero">dataset</a> released alongside the <a href="https://arxiv.org/abs/2605.12369">arXiv preprint</a>.
 - <strong>Apr 2026</strong> – Our paper <strong>GuidedVLA: Specifying Task-Relevant Factors via Plug-and-Play Action Attention Specialization</strong> was accepted to <strong>Robotics: Science and Systems (RSS) 2026</strong>.
 - <strong>Oct 2025</strong> – Awarded the <strong>RM Award (Algorithm)</strong>; contributed to SLAM and navigation supporting our team’s <strong>National Championship</strong> at RoboMaster 2025.
