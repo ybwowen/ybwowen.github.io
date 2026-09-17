@@ -143,7 +143,7 @@ My broader technical interests include **SLAM**, **motion planning**, **sensor f
   </div>
 
   <div class="project-meta">
-    arXiv preprint, 2026
+    Accepted to Conference on Robot Learning (CoRL) 2026
   </div>
 
   <p class="project-desc">
@@ -199,6 +199,7 @@ My broader technical interests include **SLAM**, **motion planning**, **sensor f
 
 ## News
 
+- <strong>Sep 2026</strong> – <strong>ELAN4D: Embodiment-Centric 4D Supervision for Vision-Language-Action Models via Plug-and-Play Adaptation</strong> was accepted to <strong>Conference on Robot Learning (CoRL) 2026</strong>.
 - <strong>May 2026</strong> – Our preprint <strong>ELAN4D: Embodiment-Centric 4D Supervision for Vision-Language-Action Models via Plug-and-Play Adaptation</strong> is now available on <a href="https://arxiv.org/abs/2605.30484v1">arXiv</a>.
 - <strong>May 2026</strong> – <strong>GuidedVLA</strong> is now open-source, with <a href="https://github.com/GuidedVLA/GuidedVLA">code</a>, <a href="https://huggingface.co/ybwowen/pi0-libero-object-depth-skill">checkpoint</a>, and <a href="https://huggingface.co/datasets/ybwowen/libero">dataset</a> released alongside the <a href="https://arxiv.org/abs/2605.12369">arXiv preprint</a>.
 - <strong>Apr 2026</strong> – Our paper <strong>GuidedVLA: Specifying Task-Relevant Factors via Plug-and-Play Action Attention Specialization</strong> was accepted to <strong>Robotics: Science and Systems (RSS) 2026</strong>.
