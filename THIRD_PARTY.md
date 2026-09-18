@@ -21,3 +21,14 @@ competition photography retains its original © RoboMaster caption.
 
 The original Lato webfonts are served locally in `assets/fonts/` under the SIL Open
 Font License; see `assets/fonts/OFL.txt`.
+
+`assets/img/elan4d/elan4d-teaser.png` is the original Figure 1 from the
+[ELAN4D paper](https://arxiv.org/html/2605.30484v1#S0.F1), used to illustrate that publication.
+
+`assets/img/institutions/sjtu.png` is the Shanghai Jiao Tong University emblem from
+[the official visual identity website](https://vi.sjtu.edu.cn/index.php/articles/base/1),
+used to identify the university in the Experience section.
+
+`assets/img/institutions/robbyant.jpeg` is the RobbyAnt logo used in
+[Yinghao Xu’s Experience section](https://justimyhxu.github.io/), retained unchanged
+to identify the company in the requested matching layout.

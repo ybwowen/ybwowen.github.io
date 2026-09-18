@@ -47,7 +47,7 @@
     .profile-photo {
       flex-shrink: 0;
       width: 160px;
-      height: 160px;
+      height: auto;
       margin-top: 8px;
       border: 1px solid #e5e7eb;
     }
@@ -186,7 +186,7 @@
 * { box-sizing: border-box; }
 .page-title { font-size: 24px; margin: 0 0 24px; color: var(--text-color); }
 .profile-text .name { margin-top: 0; }
-.profile-photo { object-fit: cover; }
+.profile-photo { height: auto !important; object-fit: contain; }
 .project-full { margin-bottom: 40px; scroll-margin-top: 24px; }
 .project-full figure { margin: 20px 0; }
 .project-full img { width: 100%; height: auto; }
@@ -207,3 +207,32 @@ pre { overflow-x: auto; white-space: pre-wrap; overflow-wrap: anywhere; }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
 /* Long inline equations can scroll without widening the page. */
 .blog-body mjx-container:not([display="true"]) { display: inline-block; max-width: 100%; overflow-x: auto; overflow-y: hidden; vertical-align: middle; }
+
+/* Homepage previews follow the image-and-text academic publication layout. */
+#selected-papers-list > .selected-entry,
+.homepage-section #projects-list > .selected-entry {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 24px !important;
+}
+.selected-entry-thumbnail { display: block; }
+.selected-entry-thumbnail img { display: block; width: 100%; height: auto; max-height: 140px; object-fit: contain; }
+.selected-entry-body { min-width: 0; }
+.homepage-section #projects-list { list-style: none; padding-left: 0; }
+@media (max-width: 600px) {
+  #selected-papers-list > .selected-entry,
+  .homepage-section #projects-list > .selected-entry { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .selected-entry-thumbnail { width: 200px; max-width: 100%; }
+}
+
+.contact-link { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
+.contact-icon { width: 15px; height: 15px; flex-shrink: 0; vertical-align: middle; }
+
+.experience-item { display: grid; grid-template-columns: 80px minmax(0, 1fr); align-items: center; gap: 24px; margin: 20px 0; }
+.experience-logo { display: block; }
+.experience-logo img { display: block; width: 100%; height: auto; object-fit: contain; }
+.experience-content h3 { font-size: 16px; margin: 0 0 4px; font-weight: 600; }
+.experience-content p { margin: 2px 0; }
+@media (max-width: 600px) { .experience-item { grid-template-columns: 60px minmax(0, 1fr); gap: 16px; } }

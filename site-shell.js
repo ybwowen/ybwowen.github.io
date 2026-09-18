@@ -5,6 +5,7 @@
 
 (function() {
   const NAV_ITEMS = [
+    { key: 'home', href: '/', label: 'Home' },
     { key: 'publications', href: '/publications/', label: 'Publications' },
     { key: 'talks', href: '/talks/', label: 'Talks' },
     { key: 'slides', href: '/slides/', label: 'Slides' },

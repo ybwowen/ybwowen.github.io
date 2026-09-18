@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
   populateTeaching();
   populateTalks();
   populateHonors();
+  populateExperience();
   ['preprints-list', 'academic-services-list', 'teaching-list'].forEach(id => {
     const list = document.getElementById(id);
     if (list && !list.children.length) list.closest('section')?.setAttribute('hidden', '');
@@ -168,17 +169,20 @@ function populatePublications(publications, listId) {
     });
     linksWrapper.appendChild(document.createTextNode(' ]'));
 
-    restDiv.appendChild(document.createTextNode(' '));
+    restDiv.appendChild(document.createElement('br'));
     restDiv.appendChild(linksWrapper);
 
     const bottomSpaceDiv = document.createElement('div');
     bottomSpaceDiv.className = 'paper_bottom_space';
 
-    li.appendChild(titleDiv);
-    li.appendChild(restDiv);
-    li.appendChild(abstractContainer);
-    li.appendChild(citationContainer);
-    li.appendChild(bottomSpaceDiv);
+    const body = document.createElement('div');
+    body.append(titleDiv, restDiv, abstractContainer, citationContainer, bottomSpaceDiv);
+    if (listId === 'selected-papers-list' && pub.thumbnail) {
+      li.className = 'selected-entry';
+      body.className = 'selected-entry-body';
+      li.appendChild(createThumbnail(pub.thumbnail, pub.url));
+    }
+    li.appendChild(body);
     list.appendChild(li);
   });
 }
@@ -186,12 +190,29 @@ function populatePublications(publications, listId) {
 /**
  * Populate projects (only selected ones for homepage)
  */
+function createThumbnail(image, url) {
+  const link = document.createElement('a');
+  link.className = 'selected-entry-thumbnail';
+  link.href = url;
+  const img = document.createElement('img');
+  img.src = image.src;
+  img.alt = image.alt;
+  img.loading = 'lazy';
+  link.appendChild(img);
+  return link;
+}
+
 function populateProjects() {
   const list = document.getElementById('projects-list');
   if (!list) return;
   getSelectedProjects().forEach(project => {
     const li = document.createElement('li');
-    li.innerHTML = `<strong><a href="/portfolio/#${project.id}">${project.title}</a></strong><br>${project.description}`;
+    li.className = 'selected-entry';
+    li.appendChild(createThumbnail(project.images[0], `/portfolio/#${project.id}`));
+    const body = document.createElement('div');
+    body.className = 'selected-entry-body';
+    body.innerHTML = `<strong><a href="/portfolio/#${project.id}">${project.title}</a></strong><br>${project.description}`;
+    li.appendChild(body);
     list.appendChild(li);
   });
 }
@@ -289,5 +310,17 @@ function populateHonors() {
     const li = document.createElement('li');
     li.innerHTML = `<p>${honor}</p>`;
     list.appendChild(li);
+  });
+}
+
+function populateExperience() {
+  const list = document.getElementById('experience-list');
+  if (!list) return;
+  experiences.forEach(experience => {
+    const item = document.createElement('div');
+    item.className = 'experience-item';
+    item.innerHTML = `<a class="experience-logo" href="${experience.url}" target="_blank" rel="noopener"><img src="${experience.logo}" alt="${experience.institution} logo" width="80" height="80" loading="lazy"></a>
+      <div class="experience-content"><h3>${experience.position ? `${experience.position}, ` : ''}<a href="${experience.url}" target="_blank" rel="noopener">${experience.institution}</a></h3>${experience.department ? `<p>${experience.department}</p>` : ''}<p class="meta">${experience.period}</p>${experience.advisor ? `<p>Advisor: <a href="${experience.advisor.url}" target="_blank" rel="noopener">${experience.advisor.name}</a></p>` : ''}</div>`;
+    list.appendChild(item);
   });
 }

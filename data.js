@@ -1,10 +1,11 @@
 const publications = [
   {
     "title": "ELAN4D: Embodiment-Centric 4D Supervision for Vision-Language-Action Models via Plug-and-Play Adaptation",
-    "authors": "Zeyuan He*, <strong>Bowen Yang*</strong>, Zhirui Fang*, Keru Zhou*, Lei Jiang, Jingjing Qian, Fan Mo, Junchi Yan, Philip Torr, Xiu Li, Li Jiang, and Jialin Yu <small>(* Equal contribution.)</small>",
+    "authors": "Zeyuan He*, <strong>Bowen Yang*</strong>, Zhirui Fang*, Keru Zhou*, Lei Jiang, Jingjing Qian, Fan Mo, Junchi Yan, Philip Torr, Xiu Li, Li Jiang, and Jialin Yu<sup title='Corresponding author'>✉</sup> <small>(* Equal contribution; ✉ Corresponding author.)</small>",
     "venue": "Conference on Robot Learning (CoRL) 2026",
     "date": "2026-05-28",
     "url": "/publication/2026-05-28-elan4d",
+    "thumbnail": { "src": "/assets/img/elan4d/elan4d-teaser.png", "alt": "ELAN4D overview: embodiment-centric 4D supervision and plug-and-play adaptation" },
     "abstract": "<p>ELAN4D is a plug-and-play training framework for Vision-Language-Action models that adds embodiment-centric 4D supervision through future robot keypoint tracks. Using forward kinematics from proprioceptive states, it derives 3D displacement tracks for robot joints and the end-effector, supervises a lightweight auxiliary track decoder during training, and discards the decoder at inference so the base policy interface remains unchanged.</p><p>The paper evaluates ELAN4D on LIBERO, LIBERO-Plus, RoboTwin2.0, and real-world manipulation tasks, showing consistent improvements over strong VLA baselines and stronger generalization under camera, background, and layout shifts.</p>",
     "description": "ELAN4D improves VLA policies with embodiment-centric 4D supervision from future robot keypoint tracks, strengthening robustness under out-of-distribution perturbations.",
     "citation": "<pre><code>@misc{he2026elan4d,\n  title         = {ELAN4D: Embodiment-Centric 4D Supervision for Vision-Language-Action Models via Plug-and-Play Adaptation},\n  author        = {Zeyuan He and Bowen Yang and Zhirui Fang and Keru Zhou and Lei Jiang and Jingjing Qian and Fan Mo and Junchi Yan and Philip Torr and Xiu Li and Li Jiang and Jialin Yu},\n  year          = {2026},\n  eprint        = {2605.30484},\n  archivePrefix = {arXiv},\n  primaryClass  = {cs.RO},\n  note          = {Accepted to the Conference on Robot Learning (CoRL) 2026},\n  url           = {https://arxiv.org/abs/2605.30484}\n}\n</code></pre>",
@@ -32,10 +33,11 @@ const publications = [
   },
   {
     "title": "GuidedVLA: Specifying Task-Relevant Factors via Plug-and-Play Action Attention Specialization",
-    "authors": "Xiaosong Jia*, <strong>Bowen Yang*</strong>, Zuhao Ge*, Xian Nie*, Yuchen Zhou*, Cunxin Fan*, et al <small>(* Equal contribution.)</small>",
+    "authors": "Xiaosong Jia*, <strong>Bowen Yang*</strong>, Zuhao Ge*, Xian Nie*, Yuchen Zhou*, Cunxin Fan*, Yufeng Li, Yilin Chai, Chao Jing, Zijian Liang, Qingwen Bu, Haidong Cao, Chao Wu, Qifeng Li, Zhenjie Yang, Chenhe Zhang, Hongyang Li, Zuxuan Wu<sup title='Corresponding author'>✉</sup>, Junchi Yan<sup title='Corresponding author'>✉</sup>, and Yu-Gang Jiang<sup title='Corresponding author'>✉</sup> <small>(* Equal contribution; ✉ Corresponding author.)</small>",
     "venue": "Robotics: Science and Systems (RSS) 2026",
     "date": "2026-05-12",
     "url": "/publication/2026-05-12-guidedvla",
+    "thumbnail": { "src": "/assets/img/guidedvla/guidedvla-teaser-800.webp", "alt": "GuidedVLA overview: object grounding, skill logic, and spatial geometry" },
     "abstract": "<p>GuidedVLA is a framework for building more robust and interpretable Vision-Language-Action models by explicitly guiding the action decoder to capture task-relevant factors. We specialize action-decoder attention heads toward object grounding, temporal skill logic, and spatial geometry, improving generalization across simulation benchmarks and real-robot tasks.</p>",
     "description": "GuidedVLA explicitly guides VLA action decoders with specialized attention heads for object grounding, temporal skill logic, and spatial geometry.",
     "citation": "<pre><code>@INPROCEEDINGS{jia2026guidedvla,\n  AUTHOR    = {Xiaosong Jia AND Bowen Yang AND Zuhao Ge AND Xian Nie AND Yuchen Zhou AND Cunxin Fan AND Yufeng Li AND Yilin Chai AND Chao Jing AND Zijian Liang AND Qingwen Bu AND Haidong Cao AND Chao Wu AND Qifeng Li AND Zhenjie Yang AND Chenhe Zhang AND Hongyang Li AND Zuxuan Wu AND Junchi Yan AND Yu-Gang Jiang},\n  TITLE     = {{GuidedVLA: Specifying Task-Relevant Factors via Plug-and-Play Action Attention Specialization}},\n  BOOKTITLE = {Proceedings of Robotics: Science and Systems},\n  YEAR      = {2026},\n  ADDRESS   = {Sydney, Australia},\n  MONTH     = {July},\n  DOI       = {10.15607/RSS.2026.XXII.084}\n}\n</code></pre>",
@@ -137,7 +139,7 @@ const projects = [
   {
     "id": "robomaster",
     "title": "RoboMaster — Team Jiao Loong",
-    "description": "Vice-Captain and Algorithm Lead; two consecutive national championships in 2024 and 2025.",
+    "description": "Vice-Captain and Algorithm Lead, working on SLAM, motion planning, and robotic autonomy.",
     "fullDescription": "I joined Team Jiao Loong, the RoboMaster team of Shanghai Jiao Tong University, in October 2023. From August 2024 to August 2025, I served as Vice-Captain and Algorithm Lead, directing work on SLAM, motion planning, sensor fusion, embedded systems, and robotic autonomy. I contributed to SLAM and navigation for Robot Sentry and received the RM Award (Algorithm) in October 2025.",
     "links": [
       {
@@ -236,10 +238,10 @@ const researchExperience = [
 
 const honors = [
   "Oct 2025 — Awarded the <strong>RM Award (Algorithm)</strong>; contributed to SLAM and navigation supporting our team’s <strong>National Championship</strong> at RoboMaster 2025.",
-  "Sep 2025 — Received the <strong>National Scholarship 2025</strong> (top 0.2% nationwide).",
+  "Sep 2025 — Received the <strong>National Scholarship 2025</strong>.",
   "Aug 2025 — Our team won the <strong>RoboMaster University Championship National Champion (2025)</strong>.",
   "Feb 2025 — Selected as <strong>Finalist (Top 2%)</strong> in the Mathematical Contest in Modeling (MCM), Problem B.",
-  "Sep 2024 — Received the <strong>National Scholarship 2024</strong> (top 0.2% nationwide).",
+  "Sep 2024 — Received the <strong>National Scholarship 2024</strong>.",
   "Aug 2024 — Our team won the <strong>RoboMaster University Championship National Champion (2024)</strong>."
 ];
 
@@ -252,3 +254,29 @@ const getSelectedPreprints = () => publications.filter(p => p.isSelected && p.is
 const getPublications = () => publications.filter(p => !p.isPreprint).sort((a, b) => b.date.localeCompare(a.date));
 const getPreprints = () => publications.filter(p => p.isPreprint).sort((a, b) => b.date.localeCompare(a.date));
 const getSelectedProjects = () => projects.filter(p => p.isSelected);
+
+const experiences = [
+  {
+    "institution": "RobbyAnt",
+    "url": "https://www.robbyant.com/",
+    "period": "Jul. 2026 – Present",
+    "logo": "/assets/img/institutions/robbyant.jpeg",
+    "advisor": {
+      "name": "Prof. Yinghao Xu",
+      "url": "https://justimyhxu.github.io/"
+    },
+    "position": "Algorithm Engineer Intern"
+  },
+  {
+    "institution": "Shanghai Jiao Tong University",
+    "url": "https://en.sjtu.edu.cn/",
+    "position": "Undergraduate",
+    "department": "Paris Elite Institute of Technology",
+    "period": "Sep. 2023 – Present",
+    "logo": "/assets/img/institutions/sjtu.png",
+    "advisor": {
+      "name": "Prof. Junchi Yan",
+      "url": "https://thinklab.sjtu.edu.cn/"
+    }
+  }
+];
