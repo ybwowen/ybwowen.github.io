@@ -249,6 +249,6 @@ const academicServices = [];
 
 const getSelectedPublications = () => publications.filter(p => p.isSelected && !p.isPreprint);
 const getSelectedPreprints = () => publications.filter(p => p.isSelected && p.isPreprint);
-const getPublications = () => publications.filter(p => !p.isPreprint);
-const getPreprints = () => publications.filter(p => p.isPreprint);
+const getPublications = () => publications.filter(p => !p.isPreprint).sort((a, b) => b.date.localeCompare(a.date));
+const getPreprints = () => publications.filter(p => p.isPreprint).sort((a, b) => b.date.localeCompare(a.date));
 const getSelectedProjects = () => projects.filter(p => p.isSelected);

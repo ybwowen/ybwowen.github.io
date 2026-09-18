@@ -267,7 +267,7 @@ function populateTalks() {
   const list = document.getElementById('talks-list');
   if (!list) return;
 
-  talks.forEach(talk => {
+  talks.slice().sort((a, b) => b.date.localeCompare(a.date)).forEach(talk => {
     const li = document.createElement('li');
     const attachmentLinks = talk.attachments.map(attachment =>
       `<a href="${attachment.url}" target="_blank" rel="noopener">${attachment.text}</a>`

@@ -7,6 +7,7 @@ const assert = require('node:assert/strict');
  const screenshotDir = process.env.SCREENSHOT_DIR || '/tmp/arvid-check';
  require('node:fs').mkdirSync(screenshotDir, {recursive:true});
  page.on('pageerror', e => errors.push(e.message));
+ page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
  page.on('response', r => { if (r.url().startsWith('http://localhost:8000') && r.status() >= 400) failed.push(`${r.status()} ${r.url()}`); });
  const nav = ['Publications','Talks','Slides','Projects','Blog Posts','CV'];
  const routes = ['/','/publications/','/talks/','/slides/','/portfolio/','/year-archive/','/cv/','/publication/2026-05-28-elan4d','/publication/2026-05-12-guidedvla','/talks/RM2024_interview','/talks/RM2025_RM_Award','/talks/RM2025_Award_interview','/posts/2023/03/yp-solution/'];
