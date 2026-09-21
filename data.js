@@ -140,7 +140,7 @@ const projects = [
     "id": "robomaster",
     "title": "RoboMaster — Team Jiao Loong",
     "description": "Vice-Captain and Algorithm Lead, working on SLAM, motion planning, and robotic autonomy.",
-    "fullDescription": "I joined Team Jiao Loong, the RoboMaster team of Shanghai Jiao Tong University, in October 2023. From August 2024 to August 2025, I served as Vice-Captain and Algorithm Lead, directing work on SLAM, motion planning, sensor fusion, embedded systems, and robotic autonomy. I contributed to SLAM and navigation for Robot Sentry and received the RM Award (Algorithm) in October 2025.",
+    "fullDescription": "I joined Team Jiao Loong, the RoboMaster team of Shanghai Jiao Tong University, in September 2023. From August 2024 to August 2025, I served as Vice-Captain and Algorithm Lead, directing work on SLAM, motion planning, sensor fusion, embedded systems, and robotic autonomy. I contributed to SLAM and navigation for Robot Sentry and received the RM Award (Algorithm) in October 2025.",
     "links": [
       {
         "text": "Talks and interviews",
