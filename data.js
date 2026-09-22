@@ -1,7 +1,7 @@
 const publications = [
   {
     "title": "ELAN4D: Embodiment-Centric 4D Supervision for Vision-Language-Action Models via Plug-and-Play Adaptation",
-    "authors": "Zeyuan He*, <strong>Bowen Yang*</strong>, Zhirui Fang*, Keru Zhou*, Lei Jiang, Jingjing Qian, Fan Mo, Junchi Yan, Philip Torr, Xiu Li, Li Jiang, and Jialin Yu<sup title='Corresponding author'>✉</sup> <small>(* Equal contribution; ✉ Corresponding author.)</small>",
+    "authors": "Zeyuan He*, <strong>Bowen Yang*</strong>, Zhirui Fang*, Keru Zhou*, Lei Jiang, Jingjing Qian, Fan Mo, <a href='https://thinklab.sjtu.edu.cn/' target='_blank' rel='noopener'>Junchi Yan</a>, Philip Torr, Xiu Li, Li Jiang, and Jialin Yu<sup title='Corresponding author'>✉</sup> <small>(* Equal contribution; ✉ Corresponding author.)</small>",
     "venue": "Conference on Robot Learning (CoRL) 2026",
     "date": "2026-05-28",
     "url": "/publication/2026-05-28-elan4d",
@@ -33,7 +33,7 @@ const publications = [
   },
   {
     "title": "GuidedVLA: Specifying Task-Relevant Factors via Plug-and-Play Action Attention Specialization",
-    "authors": "Xiaosong Jia*, <strong>Bowen Yang*</strong>, Zuhao Ge*, Xian Nie*, Yuchen Zhou*, Cunxin Fan*, Yufeng Li, Yilin Chai, Chao Jing, Zijian Liang, Qingwen Bu, Haidong Cao, Chao Wu, Qifeng Li, Zhenjie Yang, Chenhe Zhang, Hongyang Li, Zuxuan Wu<sup title='Corresponding author'>✉</sup>, Junchi Yan<sup title='Corresponding author'>✉</sup>, and Yu-Gang Jiang<sup title='Corresponding author'>✉</sup> <small>(* Equal contribution; ✉ Corresponding author.)</small>",
+    "authors": "<a href='https://jiaxiaosong1002.github.io/' target='_blank' rel='noopener'>Xiaosong Jia</a>*, <strong>Bowen Yang*</strong>, Zuhao Ge*, Xian Nie*, Yuchen Zhou*, Cunxin Fan*, Yufeng Li, Yilin Chai, Chao Jing, Zijian Liang, Qingwen Bu, Haidong Cao, Chao Wu, Qifeng Li, Zhenjie Yang, Chenhe Zhang, Hongyang Li, Zuxuan Wu<sup title='Corresponding author'>✉</sup>, <a href='https://thinklab.sjtu.edu.cn/' target='_blank' rel='noopener'>Junchi Yan</a><sup title='Corresponding author'>✉</sup>, and Yu-Gang Jiang<sup title='Corresponding author'>✉</sup> <small>(* Equal contribution; ✉ Corresponding author.)</small>",
     "venue": "Robotics: Science and Systems (RSS) 2026",
     "date": "2026-05-12",
     "url": "/publication/2026-05-12-guidedvla",
@@ -231,7 +231,7 @@ const researchExperience = [
   {
     "period": "Sep 2025 – present",
     "institution": "RethinkLab, Shanghai Jiao Tong University",
-    "mentor": "Prof. Junchi Yan and Prof. Xiaosong Jia",
+    "mentor": "<a href='https://thinklab.sjtu.edu.cn/' target='_blank' rel='noopener'>Prof. Junchi Yan</a> and <a href='https://jiaxiaosong1002.github.io/' target='_blank' rel='noopener'>Prof. Xiaosong Jia</a>",
     "description": "Research assistant working on robust VLA policy learning, representation alignment, and mechanism interpretability. My work studies object grounding, temporal skill recognition, and geometric perception."
   }
 ];
