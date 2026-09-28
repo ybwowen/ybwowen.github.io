@@ -48,7 +48,8 @@
       flex-shrink: 0;
       width: 160px;
       height: auto;
-      margin-top: 8px;
+      /* Align with the first biography line below the name. */
+      margin-top: 64.8px;
       border: 1px solid #e5e7eb;
     }
 
