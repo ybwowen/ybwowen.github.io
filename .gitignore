@@ -1,4 +1,5 @@
 _site/
+.work/
 .sass-cache/
 .venv/
 .bundle/
