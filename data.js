@@ -1,68 +1,5 @@
 const publications = [
   {
-    "title": "FOMI: A Force-Feedback Manipulation Interface for Teaching Contact-Rich Manipulation",
-    "authors": "Yishu Shen, Yiming Luo, Ruilin Wang, <strong>Bowen Yang</strong>, Shuai Yang, Fangyi Xu, Yujun Shen, Fu Zhang, Boyu Zhou, and <a href='https://justimyhxu.github.io/' target='_blank' rel='noopener'>Yinghao Xu</a><sup title='Corresponding author'>✉</sup> <small>(✉ Corresponding author.)</small>",
-    "venue": "arXiv preprint, 2026",
-    "date": "2026-10-14",
-    "url": "https://arxiv.org/abs/2610.19839",
-    "abstract": "<p>Robot-free collection with handheld interfaces enables scalable acquisition of human demonstrations for policy learning. However, existing handheld interfaces often provide limited intuitive force feedback, making contact-rich demonstration collection challenging for human operators. To address this, we present FOMI, a force-feedback manipulation interface with a scissor-shaped mechanism, which transmits object interaction forces directly to the operator's hands through actuation links without force sensors. This intuitive force feedback supports real-time action adjustment during robot-free collection of contact-rich demonstrations. Around FOMI, we build a demonstration collection system that integrates sensor calibration, data acquisition, and synchronization for robot-free collection. By further mapping pose changes and gripper opening of FOMI to robot end-effector poses and gripper commands, the system also supports teleoperation. Across four contact-rich tasks, FOMI improves collection efficiency by approximately 29% and 18% over the best baselines in robot-free collection and teleoperation, respectively. Demonstrations collected with FOMI in both modes enable policies to perform challenging contact-rich manipulation tasks with high success rates.</p>",
-    "description": "FOMI is a scissor-shaped handheld interface that transmits contact forces to the operator, with a calibrated and synchronized collection system for robot-free collection and teleoperation of contact-rich demonstrations.",
-    "citation": "<pre><code>@misc{shen2026fomi,\n  title         = {FOMI: A Force-Feedback Manipulation Interface for Teaching Contact-Rich Manipulation},\n  author        = {Yishu Shen and Yiming Luo and Ruilin Wang and Bowen Yang and Shuai Yang and Fangyi Xu and Yujun Shen and Fu Zhang and Boyu Zhou and Yinghao Xu},\n  year          = {2026},\n  eprint        = {2610.19839},\n  archivePrefix = {arXiv},\n  primaryClass  = {cs.RO},\n  url           = {https://arxiv.org/abs/2610.19839}\n}\n</code></pre>",
-    "links": [
-      {
-        "text": "Paper",
-        "url": "https://arxiv.org/pdf/2610.19839"
-      },
-      {
-        "text": "arXiv",
-        "url": "https://arxiv.org/abs/2610.19839"
-      },
-      {
-        "text": "Project",
-        "url": "https://robbyant-research.github.io/FOMI/"
-      },
-      {
-        "text": "BibTeX",
-        "url": "/files/fomi.bib"
-      }
-    ],
-    "isSelected": false,
-    "isPreprint": true,
-    "isNew": true
-  },
-  {
-    "title": "ELAN4D: Embodiment-Centric 4D Supervision for Vision-Language-Action Models via Plug-and-Play Adaptation",
-    "authors": "Zeyuan He*, <strong>Bowen Yang*</strong>, Zhirui Fang*, Keru Zhou*, Lei Jiang, Jingjing Qian, Fan Mo, <a href='https://thinklab.sjtu.edu.cn/' target='_blank' rel='noopener'>Junchi Yan</a>, Philip Torr, Xiu Li, Li Jiang, and Jialin Yu<sup title='Corresponding author'>✉</sup> <small>(* Equal contribution; ✉ Corresponding author.)</small>",
-    "venue": "Conference on Robot Learning (CoRL) 2026",
-    "date": "2026-05-28",
-    "url": "/publication/2026-05-28-elan4d",
-    "thumbnail": { "src": "/assets/img/elan4d/elan4d-teaser.png", "alt": "ELAN4D overview: embodiment-centric 4D supervision and plug-and-play adaptation" },
-    "abstract": "<p>ELAN4D is a plug-and-play training framework for Vision-Language-Action models that adds embodiment-centric 4D supervision through future robot keypoint tracks. Using forward kinematics from proprioceptive states, it derives 3D displacement tracks for robot joints and the end-effector, supervises a lightweight auxiliary track decoder during training, and discards the decoder at inference so the base policy interface remains unchanged.</p><p>The paper evaluates ELAN4D on LIBERO, LIBERO-Plus, RoboTwin2.0, and real-world manipulation tasks, showing consistent improvements over strong VLA baselines and stronger generalization under camera, background, and layout shifts.</p>",
-    "description": "ELAN4D improves VLA policies with embodiment-centric 4D supervision from future robot keypoint tracks, strengthening robustness under out-of-distribution perturbations.",
-    "citation": "<pre><code>@misc{he2026elan4d,\n  title         = {ELAN4D: Embodiment-Centric 4D Supervision for Vision-Language-Action Models via Plug-and-Play Adaptation},\n  author        = {Zeyuan He and Bowen Yang and Zhirui Fang and Keru Zhou and Lei Jiang and Jingjing Qian and Fan Mo and Junchi Yan and Philip Torr and Xiu Li and Li Jiang and Jialin Yu},\n  year          = {2026},\n  eprint        = {2605.30484},\n  archivePrefix = {arXiv},\n  primaryClass  = {cs.RO},\n  note          = {Accepted to the Conference on Robot Learning (CoRL) 2026},\n  url           = {https://arxiv.org/abs/2605.30484}\n}\n</code></pre>",
-    "links": [
-      {
-        "text": "Details",
-        "url": "/publication/2026-05-28-elan4d"
-      },
-      {
-        "text": "Paper",
-        "url": "https://arxiv.org/pdf/2605.30484v1"
-      },
-      {
-        "text": "arXiv",
-        "url": "https://arxiv.org/abs/2605.30484v1"
-      },
-      {
-        "text": "BibTeX",
-        "url": "/files/elan4d.bib"
-      }
-    ],
-    "isSelected": true,
-    "isPreprint": false,
-    "isNew": false
-  },
-  {
     "title": "GuidedVLA: Specifying Task-Relevant Factors via Plug-and-Play Action Attention Specialization",
     "authors": "<a href='https://jiaxiaosong1002.github.io/' target='_blank' rel='noopener'>Xiaosong Jia</a>*, <strong>Bowen Yang*</strong>, Zuhao Ge*, Xian Nie*, Yuchen Zhou*, Cunxin Fan*, Yufeng Li, Yilin Chai, Chao Jing, Zijian Liang, Qingwen Bu, Haidong Cao, Chao Wu, Qifeng Li, Zhenjie Yang, Chenhe Zhang, Hongyang Li, Zuxuan Wu<sup title='Corresponding author'>✉</sup>, <a href='https://thinklab.sjtu.edu.cn/' target='_blank' rel='noopener'>Junchi Yan</a><sup title='Corresponding author'>✉</sup>, and Yu-Gang Jiang<sup title='Corresponding author'>✉</sup> <small>(* Equal contribution; ✉ Corresponding author.)</small>",
     "venue": "Robotics: Science and Systems (RSS) 2026",
@@ -113,6 +50,69 @@ const publications = [
     "isSelected": true,
     "isPreprint": false,
     "isNew": false
+  },
+  {
+    "title": "ELAN4D: Embodiment-Centric 4D Supervision for Vision-Language-Action Models via Plug-and-Play Adaptation",
+    "authors": "Zeyuan He*, <strong>Bowen Yang*</strong>, Zhirui Fang*, Keru Zhou*, Lei Jiang, Jingjing Qian, Fan Mo, <a href='https://thinklab.sjtu.edu.cn/' target='_blank' rel='noopener'>Junchi Yan</a>, Philip Torr, Xiu Li, Li Jiang, and Jialin Yu<sup title='Corresponding author'>✉</sup> <small>(* Equal contribution; ✉ Corresponding author.)</small>",
+    "venue": "Conference on Robot Learning (CoRL) 2026",
+    "date": "2026-05-28",
+    "url": "/publication/2026-05-28-elan4d",
+    "thumbnail": { "src": "/assets/img/elan4d/elan4d-teaser.png", "alt": "ELAN4D overview: embodiment-centric 4D supervision and plug-and-play adaptation" },
+    "abstract": "<p>ELAN4D is a plug-and-play training framework for Vision-Language-Action models that adds embodiment-centric 4D supervision through future robot keypoint tracks. Using forward kinematics from proprioceptive states, it derives 3D displacement tracks for robot joints and the end-effector, supervises a lightweight auxiliary track decoder during training, and discards the decoder at inference so the base policy interface remains unchanged.</p><p>The paper evaluates ELAN4D on LIBERO, LIBERO-Plus, RoboTwin2.0, and real-world manipulation tasks, showing consistent improvements over strong VLA baselines and stronger generalization under camera, background, and layout shifts.</p>",
+    "description": "ELAN4D improves VLA policies with embodiment-centric 4D supervision from future robot keypoint tracks, strengthening robustness under out-of-distribution perturbations.",
+    "citation": "<pre><code>@misc{he2026elan4d,\n  title         = {ELAN4D: Embodiment-Centric 4D Supervision for Vision-Language-Action Models via Plug-and-Play Adaptation},\n  author        = {Zeyuan He and Bowen Yang and Zhirui Fang and Keru Zhou and Lei Jiang and Jingjing Qian and Fan Mo and Junchi Yan and Philip Torr and Xiu Li and Li Jiang and Jialin Yu},\n  year          = {2026},\n  eprint        = {2605.30484},\n  archivePrefix = {arXiv},\n  primaryClass  = {cs.RO},\n  note          = {Accepted to the Conference on Robot Learning (CoRL) 2026},\n  url           = {https://arxiv.org/abs/2605.30484}\n}\n</code></pre>",
+    "links": [
+      {
+        "text": "Details",
+        "url": "/publication/2026-05-28-elan4d"
+      },
+      {
+        "text": "Paper",
+        "url": "https://arxiv.org/pdf/2605.30484v1"
+      },
+      {
+        "text": "arXiv",
+        "url": "https://arxiv.org/abs/2605.30484v1"
+      },
+      {
+        "text": "BibTeX",
+        "url": "/files/elan4d.bib"
+      }
+    ],
+    "isSelected": true,
+    "isPreprint": false,
+    "isNew": false
+  },
+  {
+    "title": "FOMI: A Force-Feedback Manipulation Interface for Teaching Contact-Rich Manipulation",
+    "authors": "Yishu Shen, Yiming Luo, Ruilin Wang, <strong>Bowen Yang</strong>, Shuai Yang, Fangyi Xu, Yujun Shen, Fu Zhang, Boyu Zhou, and <a href='https://justimyhxu.github.io/' target='_blank' rel='noopener'>Yinghao Xu</a><sup title='Corresponding author'>✉</sup> <small>(✉ Corresponding author.)</small>",
+    "venue": "arXiv preprint, 2026",
+    "date": "2026-10-14",
+    "url": "https://arxiv.org/abs/2610.19839",
+    "abstract": "<p>Robot-free collection with handheld interfaces enables scalable acquisition of human demonstrations for policy learning. However, existing handheld interfaces often provide limited intuitive force feedback, making contact-rich demonstration collection challenging for human operators. To address this, we present FOMI, a force-feedback manipulation interface with a scissor-shaped mechanism, which transmits object interaction forces directly to the operator's hands through actuation links without force sensors. This intuitive force feedback supports real-time action adjustment during robot-free collection of contact-rich demonstrations. Around FOMI, we build a demonstration collection system that integrates sensor calibration, data acquisition, and synchronization for robot-free collection. By further mapping pose changes and gripper opening of FOMI to robot end-effector poses and gripper commands, the system also supports teleoperation. Across four contact-rich tasks, FOMI improves collection efficiency by approximately 29% and 18% over the best baselines in robot-free collection and teleoperation, respectively. Demonstrations collected with FOMI in both modes enable policies to perform challenging contact-rich manipulation tasks with high success rates.</p>",
+    "description": "FOMI is a scissor-shaped handheld interface that transmits contact forces to the operator, with a calibrated and synchronized collection system for robot-free collection and teleoperation of contact-rich demonstrations.",
+    "citation": "<pre><code>@misc{shen2026fomi,\n  title         = {FOMI: A Force-Feedback Manipulation Interface for Teaching Contact-Rich Manipulation},\n  author        = {Yishu Shen and Yiming Luo and Ruilin Wang and Bowen Yang and Shuai Yang and Fangyi Xu and Yujun Shen and Fu Zhang and Boyu Zhou and Yinghao Xu},\n  year          = {2026},\n  eprint        = {2610.19839},\n  archivePrefix = {arXiv},\n  primaryClass  = {cs.RO},\n  url           = {https://arxiv.org/abs/2610.19839}\n}\n</code></pre>",
+    "links": [
+      {
+        "text": "Paper",
+        "url": "https://arxiv.org/pdf/2610.19839"
+      },
+      {
+        "text": "arXiv",
+        "url": "https://arxiv.org/abs/2610.19839"
+      },
+      {
+        "text": "Project",
+        "url": "https://robbyant-research.github.io/FOMI/"
+      },
+      {
+        "text": "BibTeX",
+        "url": "/files/fomi.bib"
+      }
+    ],
+    "isSelected": false,
+    "isPreprint": true,
+    "isNew": true
   }
 ];
 
@@ -282,7 +282,8 @@ const academicServices = [];
 
 const getSelectedPublications = () => publications.filter(p => p.isSelected && !p.isPreprint);
 const getSelectedPreprints = () => publications.filter(p => p.isSelected && p.isPreprint);
-const getPublications = () => publications.filter(p => !p.isPreprint).sort((a, b) => b.date.localeCompare(a.date));
+// Order follows the publications array (set by hand), not by date.
+const getPublications = () => publications.filter(p => !p.isPreprint);
 const getPreprints = () => publications.filter(p => p.isPreprint).sort((a, b) => b.date.localeCompare(a.date));
 const getSelectedProjects = () => projects.filter(p => p.isSelected);
 

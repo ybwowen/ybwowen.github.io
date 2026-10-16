@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Homepage: single selected papers list (preprints + conference papers, both filtered to isSelected)
   if (document.getElementById('selected-papers-list')) {
     const selected = [...getSelectedPreprints(), ...getSelectedPublications()];
-    populatePublications(selected.sort((a, b) => b.date.localeCompare(a.date)), 'selected-papers-list');
+    populatePublications(selected, 'selected-papers-list');
   }
 
   // Full publications page (renders all preprints and all conference/journal papers)
