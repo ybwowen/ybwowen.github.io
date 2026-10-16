@@ -1,5 +1,36 @@
 const publications = [
   {
+    "title": "FOMI: A Force-Feedback Manipulation Interface for Teaching Contact-Rich Manipulation",
+    "authors": "Yishu Shen, Yiming Luo, Ruilin Wang, <strong>Bowen Yang</strong>, Shuai Yang, Fangyi Xu, Yujun Shen, Fu Zhang, Boyu Zhou, and <a href='https://justimyhxu.github.io/' target='_blank' rel='noopener'>Yinghao Xu</a><sup title='Corresponding author'>✉</sup> <small>(✉ Corresponding author.)</small>",
+    "venue": "arXiv preprint, 2026",
+    "date": "2026-10-14",
+    "url": "https://arxiv.org/abs/2610.19839",
+    "abstract": "<p>Robot-free collection with handheld interfaces enables scalable acquisition of human demonstrations for policy learning. However, existing handheld interfaces often provide limited intuitive force feedback, making contact-rich demonstration collection challenging for human operators. To address this, we present FOMI, a force-feedback manipulation interface with a scissor-shaped mechanism, which transmits object interaction forces directly to the operator's hands through actuation links without force sensors. This intuitive force feedback supports real-time action adjustment during robot-free collection of contact-rich demonstrations. Around FOMI, we build a demonstration collection system that integrates sensor calibration, data acquisition, and synchronization for robot-free collection. By further mapping pose changes and gripper opening of FOMI to robot end-effector poses and gripper commands, the system also supports teleoperation. Across four contact-rich tasks, FOMI improves collection efficiency by approximately 29% and 18% over the best baselines in robot-free collection and teleoperation, respectively. Demonstrations collected with FOMI in both modes enable policies to perform challenging contact-rich manipulation tasks with high success rates.</p>",
+    "description": "FOMI is a scissor-shaped handheld interface that transmits contact forces to the operator, with a calibrated and synchronized collection system for robot-free collection and teleoperation of contact-rich demonstrations.",
+    "citation": "<pre><code>@misc{shen2026fomi,\n  title         = {FOMI: A Force-Feedback Manipulation Interface for Teaching Contact-Rich Manipulation},\n  author        = {Yishu Shen and Yiming Luo and Ruilin Wang and Bowen Yang and Shuai Yang and Fangyi Xu and Yujun Shen and Fu Zhang and Boyu Zhou and Yinghao Xu},\n  year          = {2026},\n  eprint        = {2610.19839},\n  archivePrefix = {arXiv},\n  primaryClass  = {cs.RO},\n  url           = {https://arxiv.org/abs/2610.19839}\n}\n</code></pre>",
+    "links": [
+      {
+        "text": "Paper",
+        "url": "https://arxiv.org/pdf/2610.19839"
+      },
+      {
+        "text": "arXiv",
+        "url": "https://arxiv.org/abs/2610.19839"
+      },
+      {
+        "text": "Project",
+        "url": "https://robbyant-research.github.io/FOMI/"
+      },
+      {
+        "text": "BibTeX",
+        "url": "/files/fomi.bib"
+      }
+    ],
+    "isSelected": false,
+    "isPreprint": true,
+    "isNew": true
+  },
+  {
     "title": "ELAN4D: Embodiment-Centric 4D Supervision for Vision-Language-Action Models via Plug-and-Play Adaptation",
     "authors": "Zeyuan He*, <strong>Bowen Yang*</strong>, Zhirui Fang*, Keru Zhou*, Lei Jiang, Jingjing Qian, Fan Mo, <a href='https://thinklab.sjtu.edu.cn/' target='_blank' rel='noopener'>Junchi Yan</a>, Philip Torr, Xiu Li, Li Jiang, and Jialin Yu<sup title='Corresponding author'>✉</sup> <small>(* Equal contribution; ✉ Corresponding author.)</small>",
     "venue": "Conference on Robot Learning (CoRL) 2026",
@@ -140,7 +171,7 @@ const projects = [
     "id": "robomaster",
     "title": "RoboMaster — Team Jiao Loong",
     "description": "Vice-Captain and Algorithm Lead, working on SLAM, motion planning, and robotic autonomy.",
-    "fullDescription": "I joined Team Jiao Loong, the RoboMaster team of Shanghai Jiao Tong University, in September 2023. From August 2024 to August 2025, I served as Vice-Captain and Algorithm Lead, directing work on SLAM, motion planning, sensor fusion, embedded systems, and robotic autonomy. I contributed to SLAM and navigation for Robot Sentry and received the RM Award (Algorithm) in October 2025.",
+    "fullDescription": "I joined Team Jiao Loong, Shanghai Jiao Tong University's RoboMaster team, in September 2023. From August 2024 to August 2025, I was Vice-Captain and Algorithm Lead, directing work on SLAM, motion planning, sensor fusion, embedded systems, and robotic autonomy. I developed SLAM and navigation for Robot Sentry, led the recruitment and training of more than 60 new members, and coordinated an on-campus competition for 32 student teams. I received the RM Award (Algorithm) in October 2025.",
     "links": [
       {
         "text": "Talks and interviews",
@@ -179,7 +210,7 @@ const talks = [
     "date": "2026-04-28",
     "venue": "Shanghai, China",
     "url": "/talks/RM2025_Award_interview",
-    "description": "After I received the RM Award 2025, the RoboMaster organizing committee visited Shanghai Jiao Tong University for a personal interview about my RoboMaster journey and our team's work.",
+    "description": "After I received the RM Award 2025, the RoboMaster organizing committee visited Shanghai Jiao Tong University to interview me about my experience in RoboMaster and our team's work.",
     "attachments": [
       {
         "text": "Video",
@@ -196,7 +227,7 @@ const talks = [
     "date": "2025-08-04",
     "venue": "Shenzhen, Guangdong, China",
     "url": "/talks/RM2025_RM_Award",
-    "description": "I was nominated for the RM Award (Algorithm). As an RM Award candidate, I was invited to share our technical solution. I officially received the RM Award in October 2025.",
+    "description": "As a nominee for the RM Award (Algorithm), I was invited to present our technical solution. I officially received the award in October 2025.",
     "attachments": [
       {
         "text": "Video",
@@ -213,7 +244,7 @@ const talks = [
     "date": "2024-08-08",
     "venue": "Shenzhen, Guangdong, China",
     "url": "/talks/RM2024_interview",
-    "description": "I was invited to share our algorithm design of Robot Sentry after the first match in national finals.",
+    "description": "I was invited to present our algorithm design for Robot Sentry after the first match of the national finals.",
     "attachments": [
       {
         "text": "Video",
@@ -232,17 +263,17 @@ const researchExperience = [
     "period": "Sep 2025 – present",
     "institution": "RethinkLab, Shanghai Jiao Tong University",
     "mentor": "<a href='https://thinklab.sjtu.edu.cn/' target='_blank' rel='noopener'>Prof. Junchi Yan</a> and <a href='https://jiaxiaosong1002.github.io/' target='_blank' rel='noopener'>Prof. Xiaosong Jia</a>",
-    "description": "Research assistant working on robust VLA policy learning, representation alignment, and mechanism interpretability. My work studies object grounding, temporal skill recognition, and geometric perception."
+    "description": "As a research assistant, I study robust VLA policy learning, representation alignment, and mechanism interpretability. My work covers object grounding, temporal skill recognition, and geometric perception."
   }
 ];
 
 const honors = [
-  "Oct 2025 — Awarded the <strong>RM Award (Algorithm)</strong>; contributed to SLAM and navigation supporting our team’s <strong>National Championship</strong> at RoboMaster 2025.",
+  "Oct 2025 — Awarded the <strong>RM Award (Algorithm)</strong> for Sentry SLAM and navigation, one of three algorithm recipients in 2025.",
   "Sep 2025 — Received the <strong>National Scholarship 2025</strong>.",
-  "Aug 2025 — Our team won the <strong>RoboMaster University Championship National Champion (2025)</strong>.",
+  "Aug 2025 — Our team was the <strong>RoboMaster University Championship National Champion (2025)</strong>.",
   "Feb 2025 — Selected as <strong>Finalist (Top 2%)</strong> in the Mathematical Contest in Modeling (MCM), Problem B.",
   "Sep 2024 — Received the <strong>National Scholarship 2024</strong>.",
-  "Aug 2024 — Our team won the <strong>RoboMaster University Championship National Champion (2024)</strong>."
+  "Aug 2024 — Our team was the <strong>RoboMaster University Championship National Champion (2024)</strong>."
 ];
 
 const teaching = [];
@@ -259,7 +290,7 @@ const experiences = [
   {
     "institution": "RobbyAnt",
     "url": "https://www.robbyant.com/",
-    "period": "Jul. 2026 – Present",
+    "period": "Jun. 2026 – Present",
     "logo": "/assets/img/institutions/robbyant.jpeg",
     "advisor": {
       "name": "Prof. Yinghao Xu",

@@ -29,7 +29,7 @@ const assert = require('node:assert/strict');
  await page.goto('http://localhost:8000/');
  assert.equal(await page.locator('.news-list li:visible').count(),6);
  await page.locator('#news-toggle').focus(); await page.keyboard.press('Enter');
- assert.equal(await page.locator('.news-list li:visible').count(),12);
+ assert.equal(await page.locator('.news-list li:visible').count(),13);
  assert(!await page.locator('.news-list').textContent().then(text => text.includes('Vice-Captain')));
  await page.keyboard.press('Enter'); assert.equal(await page.locator('.news-list li:visible').count(),6);
  assert.equal(await page.locator('#selected-papers-list > li').count(),2);
