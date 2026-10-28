@@ -5,7 +5,7 @@ const publications = [
     "venue": "Robotics: Science and Systems (RSS) 2026",
     "date": "2026-05-12",
     "url": "/publication/2026-05-12-guidedvla",
-    "thumbnail": { "src": "/assets/img/guidedvla/guidedvla-teaser-800.webp", "alt": "GuidedVLA overview: object grounding, skill logic, and spatial geometry" },
+    "thumbnail": { "src": "/assets/img/guidedvla/guidedvla-rollout.jpg", "video": "/assets/img/guidedvla/guidedvla-rollout.mp4", "alt": "Real-robot rollout: a robot arm places a vegetable on a plate" },
     "abstract": "<p>GuidedVLA is a framework for building more robust and interpretable Vision-Language-Action models by explicitly guiding the action decoder to capture task-relevant factors. We specialize action-decoder attention heads toward object grounding, temporal skill logic, and spatial geometry, improving generalization across simulation benchmarks and real-robot tasks.</p>",
     "description": "GuidedVLA explicitly guides VLA action decoders with specialized attention heads for object grounding, temporal skill logic, and spatial geometry.",
     "citation": "<pre><code>@INPROCEEDINGS{jia2026guidedvla,\n  AUTHOR    = {Xiaosong Jia AND Bowen Yang AND Zuhao Ge AND Xian Nie AND Yuchen Zhou AND Cunxin Fan AND Yufeng Li AND Yilin Chai AND Chao Jing AND Zijian Liang AND Qingwen Bu AND Haidong Cao AND Chao Wu AND Qifeng Li AND Zhenjie Yang AND Chenhe Zhang AND Hongyang Li AND Zuxuan Wu AND Junchi Yan AND Yu-Gang Jiang},\n  TITLE     = {{GuidedVLA: Specifying Task-Relevant Factors via Plug-and-Play Action Attention Specialization}},\n  BOOKTITLE = {Proceedings of Robotics: Science and Systems},\n  YEAR      = {2026},\n  ADDRESS   = {Sydney, Australia},\n  MONTH     = {July},\n  DOI       = {10.15607/RSS.2026.XXII.084}\n}\n</code></pre>",
@@ -57,7 +57,7 @@ const publications = [
     "venue": "Conference on Robot Learning (CoRL) 2026",
     "date": "2026-05-28",
     "url": "/publication/2026-05-28-elan4d",
-    "thumbnail": { "src": "/assets/img/elan4d/elan4d-teaser.png", "alt": "ELAN4D overview: embodiment-centric 4D supervision and plug-and-play adaptation" },
+    "thumbnail": { "src": "/assets/img/elan4d/elan4d-real-robot.jpg", "alt": "Real-robot task: a dual-arm robot stacks paper cups" },
     "abstract": "<p>ELAN4D is a plug-and-play training framework for Vision-Language-Action models that adds embodiment-centric 4D supervision through future robot keypoint tracks. Using forward kinematics from proprioceptive states, it derives 3D displacement tracks for robot joints and the end-effector, supervises a lightweight auxiliary track decoder during training, and discards the decoder at inference so the base policy interface remains unchanged.</p><p>The paper evaluates ELAN4D on LIBERO, LIBERO-Plus, RoboTwin2.0, and real-world manipulation tasks, showing consistent improvements over strong VLA baselines and stronger generalization under camera, background, and layout shifts.</p>",
     "description": "ELAN4D improves VLA policies with embodiment-centric 4D supervision from future robot keypoint tracks, strengthening robustness under out-of-distribution perturbations.",
     "citation": "<pre><code>@misc{he2026elan4d,\n  title         = {ELAN4D: Embodiment-Centric 4D Supervision for Vision-Language-Action Models via Plug-and-Play Adaptation},\n  author        = {Zeyuan He and Bowen Yang and Zhirui Fang and Keru Zhou and Lei Jiang and Jingjing Qian and Fan Mo and Junchi Yan and Philip Torr and Xiu Li and Li Jiang and Jialin Yu},\n  year          = {2026},\n  eprint        = {2605.30484},\n  archivePrefix = {arXiv},\n  primaryClass  = {cs.RO},\n  note          = {Accepted to the Conference on Robot Learning (CoRL) 2026},\n  url           = {https://arxiv.org/abs/2605.30484}\n}\n</code></pre>",
@@ -159,6 +159,7 @@ const projects = [
     ],
     "isSelected": true,
     "badges": [],
+    "homeImage": { "src": "/assets/img/guidedvla/guidedvla-real-robot.jpg", "alt": "GuidedVLA real-robot tabletop task with fruit, vegetables, and a bowl" },
     "images": [
       {
         "src": "/assets/img/guidedvla/guidedvla-teaser-1200.webp",
