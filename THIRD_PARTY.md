@@ -22,8 +22,16 @@ competition photography retains its original © RoboMaster caption.
 The original Lato webfonts are served locally in `assets/fonts/` under the SIL Open
 Font License; see `assets/fonts/OFL.txt`.
 
+`assets/fonts/newsreader-latin.woff2` is the Latin subset of Newsreader by Production Type,
+from Google Fonts, also under the SIL Open Font License.
+
 `assets/img/elan4d/elan4d-teaser.png` is the original Figure 1 from the
 [ELAN4D paper](https://arxiv.org/html/2605.30484v1#S0.F1), used to illustrate that publication.
+
+`assets/img/elan4d/elan4d-real-robot.jpg` is cropped from the ELAN4D paper's real-robot task figure
+([arXiv HTML](https://arxiv.org/html/2605.30484v1)). The GuidedVLA thumbnails
+`assets/img/guidedvla/guidedvla-rollout.*` and `guidedvla-real-robot.jpg` are frames and a short clip
+from the real-robot videos on the [GuidedVLA project page](https://guidedvla.github.io/project_page/).
 
 `assets/img/institutions/sjtu.png` is the Shanghai Jiao Tong University emblem from
 [the official visual identity website](https://vi.sjtu.edu.cn/index.php/articles/base/1),
