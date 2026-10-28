@@ -89,6 +89,7 @@ const publications = [
     "venue": "arXiv preprint, 2026",
     "date": "2026-10-14",
     "url": "https://arxiv.org/abs/2610.19839",
+    "thumbnail": { "src": "/assets/img/fomi/fomi-collection.jpg", "video": "/assets/img/fomi/fomi-collection.mp4", "alt": "An operator holds two FOMI handheld grippers during data collection" },
     "abstract": "<p>Robot-free collection with handheld interfaces enables scalable acquisition of human demonstrations for policy learning. However, existing handheld interfaces often provide limited intuitive force feedback, making contact-rich demonstration collection challenging for human operators. To address this, we present FOMI, a force-feedback manipulation interface with a scissor-shaped mechanism, which transmits object interaction forces directly to the operator's hands through actuation links without force sensors. This intuitive force feedback supports real-time action adjustment during robot-free collection of contact-rich demonstrations. Around FOMI, we build a demonstration collection system that integrates sensor calibration, data acquisition, and synchronization for robot-free collection. By further mapping pose changes and gripper opening of FOMI to robot end-effector poses and gripper commands, the system also supports teleoperation. Across four contact-rich tasks, FOMI improves collection efficiency by approximately 29% and 18% over the best baselines in robot-free collection and teleoperation, respectively. Demonstrations collected with FOMI in both modes enable policies to perform challenging contact-rich manipulation tasks with high success rates.</p>",
     "description": "FOMI is a scissor-shaped handheld interface that transmits contact forces to the operator, with a calibrated and synchronized collection system for robot-free collection and teleoperation of contact-rich demonstrations.",
     "citation": "<pre><code>@misc{shen2026fomi,\n  title         = {FOMI: A Force-Feedback Manipulation Interface for Teaching Contact-Rich Manipulation},\n  author        = {Yishu Shen and Yiming Luo and Ruilin Wang and Bowen Yang and Shuai Yang and Fangyi Xu and Yujun Shen and Fu Zhang and Boyu Zhou and Yinghao Xu},\n  year          = {2026},\n  eprint        = {2610.19839},\n  archivePrefix = {arXiv},\n  primaryClass  = {cs.RO},\n  url           = {https://arxiv.org/abs/2610.19839}\n}\n</code></pre>",
@@ -108,9 +109,17 @@ const publications = [
       {
         "text": "BibTeX",
         "url": "/files/fomi.bib"
+      },
+      {
+        "text": "X",
+        "url": "https://x.com/YinghaoXu1/status/2114540032853950738"
+      },
+      {
+        "text": "Xiaohongshu",
+        "url": "https://www.xiaohongshu.com/discovery/item/6adef7690000000003002e53?xsec_token=AB1V5ELca0fclzrmkBgjhblQszyEHCSn7OH73QVj4nkQE=&xsec_source=pc_share"
       }
     ],
-    "isSelected": false,
+    "isSelected": true,
     "isPreprint": true,
     "isNew": true
   }
