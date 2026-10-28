@@ -194,7 +194,7 @@ function populatePublications(publications, listId) {
 /**
  * Homepage paper entry: venue first, a shortened author list, and the main links up front.
  */
-const PRIMARY_PAPER_LINKS = ['Paper', 'Project', 'Code'];
+const PRIMARY_PAPER_LINKS = ['Paper', 'Project', 'Code', 'X', 'Xiaohongshu'];
 const VISIBLE_AUTHORS = 6;
 
 function createSelectedPaperBody(pub, linkElements, abstractToggle, citationToggle) {

@@ -32,6 +32,8 @@ from Google Fonts, also under the SIL Open Font License.
 ([arXiv HTML](https://arxiv.org/html/2605.30484v1)). The GuidedVLA thumbnails
 `assets/img/guidedvla/guidedvla-rollout.*` and `guidedvla-real-robot.jpg` are frames and a short clip
 from the real-robot videos on the [GuidedVLA project page](https://guidedvla.github.io/project_page/).
+`assets/img/fomi/fomi-collection.*` are a frame and a short clip from the data-collection video on the
+[FOMI project page](https://robbyant-research.github.io/FOMI/).
 
 `assets/img/institutions/sjtu.png` is the Shanghai Jiao Tong University emblem from
 [the official visual identity website](https://vi.sjtu.edu.cn/index.php/articles/base/1),
