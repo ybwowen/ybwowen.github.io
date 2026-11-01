@@ -78,9 +78,9 @@ pre { overflow-x: auto; white-space: pre-wrap; overflow-wrap: anywhere; }
 .selected-entry-thumbnail img, .selected-entry-thumbnail video { position: absolute; inset: 0; width: 100%; height: 100%; max-height: none; object-fit: cover; }
 .selected-entry-thumbnail video { opacity: 0; transition: opacity .25s ease; }
 .selected-entry-thumbnail.playing video { opacity: 1; }
-/* Paper teasers are wide figures: show them whole instead of cropping to a fixed frame. */
-#selected-papers-list .selected-entry-thumbnail { aspect-ratio: auto; background: #fff; border: 1px solid var(--border-color, rgba(0,0,0,.08)); }
-#selected-papers-list .selected-entry-thumbnail img { position: static; height: auto; object-fit: contain; }
+/* Paper teasers are wide figures: show them whole, centred in one shared 2:1 frame so the three line up. */
+#selected-papers-list .selected-entry-thumbnail { aspect-ratio: 2 / 1; background: #fff; border: 1px solid var(--border-color, rgba(0,0,0,.08)); }
+#selected-papers-list .selected-entry-thumbnail img { object-fit: contain; }
 .selected-entry-body { min-width: 0; }
 #selected-papers-list .papertitle { margin: 0 0 6px; }
 #selected-papers-list .papertitle a { color: var(--text-color); }
