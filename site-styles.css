@@ -73,11 +73,14 @@ pre { overflow-x: auto; white-space: pre-wrap; overflow-wrap: anywhere; }
 .news-toggle:hover, .view-all:hover { color: var(--secondary-color); text-decoration: underline; text-underline-offset: 3px; }
 
 .homepage-section .publication-list { list-style: none !important; padding-left: 0 !important; margin: 0; }
-#selected-papers-list > .selected-entry { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 28px; align-items: start; margin: 0 0 40px !important; padding: 0 !important; }
+#selected-papers-list > .selected-entry { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 28px; align-items: start; margin: 0 0 40px !important; padding: 0 !important; }
 .selected-entry-thumbnail { position: relative; display: block; overflow: hidden; border-radius: 6px; background: var(--tint-bg); aspect-ratio: 4 / 3; }
 .selected-entry-thumbnail img, .selected-entry-thumbnail video { position: absolute; inset: 0; width: 100%; height: 100%; max-height: none; object-fit: cover; }
 .selected-entry-thumbnail video { opacity: 0; transition: opacity .25s ease; }
 .selected-entry-thumbnail.playing video { opacity: 1; }
+/* Paper teasers are wide figures: show them whole instead of cropping to a fixed frame. */
+#selected-papers-list .selected-entry-thumbnail { aspect-ratio: auto; background: #fff; border: 1px solid var(--border-color, rgba(0,0,0,.08)); }
+#selected-papers-list .selected-entry-thumbnail img { position: static; height: auto; object-fit: contain; }
 .selected-entry-body { min-width: 0; }
 #selected-papers-list .papertitle { margin: 0 0 6px; }
 #selected-papers-list .papertitle a { color: var(--text-color); }
@@ -120,7 +123,6 @@ pre { overflow-x: auto; white-space: pre-wrap; overflow-wrap: anywhere; }
 @media (max-width: 600px) {
   .news-list li { grid-template-columns: 78px minmax(0, 1fr); gap: 10px; }
   #selected-papers-list > .selected-entry { grid-template-columns: minmax(0, 1fr); gap: 14px; }
-  #selected-papers-list .selected-entry-thumbnail { aspect-ratio: 16 / 9; }
   .homepage-section #projects-list { grid-template-columns: minmax(0, 1fr); gap: 32px; }
   .experience-item { grid-template-columns: 40px minmax(0, 1fr); gap: 14px; }
   .experience-logo img { width: 40px; height: 40px; }
